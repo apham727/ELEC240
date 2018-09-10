@@ -52,7 +52,7 @@
 	
 	\section{Objective}
 	
-	This lab focuses on the fundamental tools and skills for electrical engineering laboratory work. This includes making current, voltage, and resistance measurements with a digital multimeter, creating graphs in MATLAB, and producing and measuring sinusoids with an oscilloscope and function generator. 
+	This lab focuses on the fundamental tools and skills for electrical engineering laboratory work. This includes making current, voltage, and resistance measurements with a digital multimeter, creating graphs in MATLAB, and producing and measuring sinusoids with an oscilloscope and function generator.  
 	
 	\medskip
 	
@@ -61,7 +61,7 @@
 	%\textit{For the Objective section, identify the test you performed and its objectives. The objectives of the test are important to state because they are usually analyzed in the conclusion to determine whether the test succeeded.}
 	
 	\section{Materials}
-	Cabinet #5
+	
 	\begin{itemize}
 		\item Digital Multimeter (DMM)
 		\item MATLAB
@@ -114,8 +114,52 @@
 	
 	\section{Results and Discussion}
 	
-	Your text here
+	\subsection{Experiment 1.1: The DMM}
+	\subsubsection{Part A: Measuring Voltage with the DMM}
+
+	Note: We were unable to aquire multiple Double A batteries for the initial tests
+	\begin{itemize}
 	
+	\item Measuring the voltage of a D battery: 1.62V
+	\item Voltage of battery attached to Lightbulb: 1.53V, The voltage has dropped, as some energy is being used to power the bulb
+	\end{itemize}
+
+	\subsubsection{Part B: Measuring Current with the DMM}
+	\begin{itemize}
+	\item Current across the battery in the Lightbulb - Battery circuit: 59.5 mA
+	\item Current across the NC circuit: 59.1 mA
+	\end{itemize}
+	\subsubsection{Part C: Measuring Resistance with the DMM}
+	\begin{itemize}
+	\item 330 Ohms Resistor - Measured 325.7 Ohms
+ 430 Ohms Resistor - Measured 424 Ohms
+ 2200 Ohms Resistor - Measured 2153 Ohms
+	\item All resistors had a tolerance of 5\%, which is in accordance with the measured values
+	\item Holding the probes between your fingers opens a parallel path for the current to flow, which will lead to an inaccurate measure of the resistance of the circuit  
+	\item The resistance of two resistors in series is 2R + 2d, where d is the tolerance of a single resistor
+	\item The resistance of two resistors in parallel is .5R + .5d, where d is the tolerance of a single resistor
+	\item Measuring 10 resistors with a resistance of 4.6 kOhms and a tolerance of 5\%
+In kOhms: 4.61, 4.61, 4.59, 4.61, 4.63, 4.61, 4.63, 4.60, 4.61, 4.62. All of these resistances fall within the tolerance
+	\item Resistance of the body through dry fingers: 1.325 MOhms with a resolution of .1 MOhms
+	\item Resistance of the body throuh wet fingers: 168 kOhms with a resolution of 10 kOhms
+	\item This change in resistance can be attributed to the fact that adding water to fingers increases the surface area of the contact of the leads to the skin, which leads to a decrease in resistance. Following Ohms law, with dry skin, a voltage of 6.625 kV would produce 5 mA of current
+	\item The resistance of the lightbulb is 4.8 Ohms. This is not the answer that we would expect from Ohm's law because a lightbulb is a non-Ohmic circuit element.
+	\item The DMM reads .01 fewer volts that the Virtualbench power supply, hinting a voltage drop somewhere in the small circuit.
+	\item
+	\item For a  1kOhm resistor, Ohms Law holds for all V
+	\end{itemize}
+
+	\subsection{Experiment 1.2 The Oscilloscope and Function Generator}
+	\subsubsection{Viewing Signals with te Oscilloscope}
+	\begin{itemize}
+	\item The numbers are slightly off from the function generator because of two factors, the first being that the generator is not perfectly able to create the given sine waves, and the second being that the oscilloscope uses various measurements and approximations to create its given outputs which cannot be perfectly accurate.
+	\item The duty cycle changes the ratio of time spent on the positive pulse vs the negative pulse
+	\item The DC offset shifts the curve along the Y axis
+	\item The "DC" voltage used is actually just a recitified AC signal, and an oscilloscope can be used to find the effectiveness of the recifier.
+	\item The comparison of the found frequency to the given frequency yields no surprises, with them being very similar.With a division of 100 microseconds per div, there is a period of 10 divisions, which is 1 millisecond. The given period (being the inverse of the given frequency) is .999 milliseconds It is within .001 ms.
+
+	\end{itemize}
+
 	\medskip
 	
 	\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
