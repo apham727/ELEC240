@@ -131,11 +131,11 @@ No pre-lab calculations were needed, but understanding of \textit{Figure 1} was 
 \subsubsection{Part A: Microphone}
 \begin{itemize}
 	\item We connected the connected the microphone to the oscilloscope by first connecting the microphone to the J1-4 port on the breadboard, then connecting the J1-4 to the J1-1 port, then connecting the oscilloscope to that J1-1 port. We then whistled into the microphone. We adjusted the trigger to 5 mV above the origin. By doing so, we were able to essentially "freeze" the sinusoid so that we could better view its properties. 
-	\item We then sang the 5 vowel sounds into the microphone. We found that the vowel A was the most sinusoid-like. Attached below is the sound of an "A" in comparison to the sound of "O". 
+	\item We then sang the 5 vowel sounds into the microphone. We found that the vowel A was the most sinusoid-like. \textit{Fig. 1} is the sound of an "A" in comparison to the sound of "O" in \textit{Fig. 2}. 
 \end{itemize}
 
 \begin{enumerate}
-	\item  We then played a perfect "A" tone off a smartphone speaker into the microphone. The resulting signal was a near-perfect sine wave. 
+	\item  We then played a perfect "A" tone off a smartphone speaker into the microphone. The resulting signal was a near-perfect sine wave with a frequency of 440 Hz as opposed to the vocally generated "A" signal in \textit{Fig. 1} with a frequency of 623 Hz. The discrepancy in frequency arose from the fact that a human can sing an "A" sound at a different pitch than the offical "A". 
 \end{enumerate}
 
 \begin{center}
@@ -151,9 +151,37 @@ No pre-lab calculations were needed, but understanding of \textit{Figure 1} was 
 	\end{figure}
 \end{center}
 
+\subsubsection{Part B: The Lab PC as a Signal Source}
+In this section, we connected the Lab PC to the oscilloscope by first connecting the lab PC to the J2-1 port, connecting the J2-1 port to the J1-3 port, and then connecting the speaker to the J1-3 port. We also kept the connection between the speaker and the oscilloscope from Part A. We then played the three sound files through the speaker and observed the signals through the oscilloscope. \textit{Fig 4.} displays the oscilloscope readings of the mystery signal. 
+\begin{center}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/mystery.png}
+		\caption{Oscilloscope reading of the Mystery Signal}
+	\end{figure}
+\end{center}
+
+The mystery tone is a Shepard tone. It is a superposition of constantly increasing sine waves (where each individual sine wave increases in frequency equivalent to one octave). The tone gives the impression of a constantly increasing pitch. 
 
 
+\subsection{Experiment 2.3: Optoelectrical Signal Sources and Sinks}
+\subsubsection{Part A: The PhotoDiode}
+We begin this section by connecting the cathode of the photodiode to pin 14 and the anode to pin 1 (which was connected to the channel 1 of the oscilloscope). We then noted the following voltages produced by the photodiode in different environments:
+\begin{itemize}
+	\item Photodiode in well-lit environment: -177 mV
+	\item Photodiode covered by hand: -17.8 mV
+\end{itemize}
 
+We then set the oscilloscope to measure AC signals from the photodiode. The peak-to-peak amplitude of signal was 2.88 mV and the frequency was 196.83 kHz. The waveform is sinusoidal with periodic spikes in amplitude that occur in tight clumps depicted in \textit{Fig. 5} below. 
+\begin{center}
+	\begin{figure}
+		\centering
+		\includegraphics[scale = 0.22]{images/zoom.png}
+		\caption{Oscilloscope Reading of AC signal from Photodiode}
+	\end{figure}
+\end{center}
+
+\subsubsection{Part B: Light Emitting Diode}
 
 
 \medskip
