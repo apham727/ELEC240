@@ -62,7 +62,7 @@ In this lab, we explored how to detect and change signals through the use of ele
 
 %\textit{For the Objective section, identify the test you performed and its objectives. The objectives of the test are important to state because they are usually analyzed in the conclusion to determine whether the test succeeded.}
 
-\section{Materials}
+\section{Materials and Pre-Lab Work}
 
 \begin{itemize}
 	\item Virtual Bench (Software, Oscilloscope, Function Generator, DC Power Supply)
@@ -99,20 +99,22 @@ We created a simple circuit connecting a photodiode to the oscilloscope and obse
 
 %\textit{Note (To be deleted): This section provides a summary of the test your team performed. Give enough information so readers can understand what you did, but do not go into the details of every step.}
 
-\subsection{Pre-Lab Calculations and Schematics}
+\section{Pre-Lab Calculations and Schematics}
 
 \begin{center}
 	\begin{figure} [H]
 		\centering
-		\includegraphics[scale=0.22]{images/prelab.png}
+		\includegraphics[scale=0.5]{images/prelab.png}
 		\caption{Given Pre-lab Schematic to understand load resistances for the purpose of Thevenin Voltages}
 	\end{figure}
 \end{center}
 No pre-lab calculations were needed, but understanding of \textit{Figure 1} was important. This figure highlights the importance of not discrediting the resistance of the  measuring instrument. This is important in Experiment 2.1 for the understanding of Thevenin equivalents.
 
+We began setting up for the first part of the lab by gathering a microphone and the necessary cables from the supply room (listed above in the materials section) and by powering up the lab PC and starting up Virtual Bench. 
+
 \medskip
 
-\textit{Note (To be deleted): Include the homework pre-calculations and schematics that serve as the initial setup for the test. Briefly explain the importance of each item you include. You may want to number your equations/figures so you can refer to them in later sections. Including photos of handwritten work is okay.}
+%\textit{Note (To be deleted): Include the homework pre-calculations and schematics that serve as the initial setup for the test. Briefly explain the importance of each item you include. You may want to number your equations/figures so you can refer to them in later sections. Including photos of handwritten work is okay.}
 
 \section{Results and Discussion}
 
@@ -125,17 +127,54 @@ No pre-lab calculations were needed, but understanding of \textit{Figure 1} was 
 \end{itemize}
 
 \subsubsection{Part B: Thevenin Equivalent and Maximum Power Transfer}
- 
+By analyzing the in \textit{Fig. 1}, we find that the Thevenin voltage is 5V. We then measured the voltage drops across various resistors when connected in series with the 5V DC power supply. We obtained the following voltage drops:
+\begin{itemize}
+	\item \textbf{20 Ohms}: 1.453 V
+	\item \textbf{30 Ohms}: 1.891 V
+	\item \textbf{50 Ohms}: 2.515 V
+	\item \textbf{100 Ohms}: 3.31 V
+\end{itemize} 
+
+We then calculated the $R_{OUT}$ (based on \textit{Fig.1}) for each of the resistors and obtained the following values for $R_{OUT}$ for each resistor (in bold):
+\begin{itemize}
+	\item \textbf{20 Ohms}: 48.823 Ohms
+	\item \textbf{30 Ohms}: 49.323 Ohms
+	\item \textbf{50 Ohms}: 49.404 Ohms
+	\item \textbf{100 Ohms}: 51.0574 Ohms
+\end{itemize} 
+
+As we can see from our calculated $R_{OUT}$ values for each resistor, the $R_{OUT}$ of the circuit is approximately 50 Ohms. Therefore, the Thevenin resistance does not change. 
+
+We then calculated power using the formula $P_{avg}= 0.5 * {V_M}^2 * R_L$ where $V_M$ is the maximum amplitude of the voltage drop across the load resistance $R_L$. We obtained the following power values for each of the resistors (in bold):
+\begin{itemize}
+	\item \textbf{20 Ohms}: 125.81 W
+	\item \textbf{30 Ohms}: 144.99 W
+	\item \textbf{50 Ohms}: 154.38 W
+	\item \textbf{100 Ohms}: 142.81 W
+\end{itemize} 
+
+\textit{Fig. 2} depicts the Power vs $R_L$ relationship:
+\begin{center}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.4]{images/powerplot.png}
+		\caption{Power vs $R_L$ relationship}
+	\end{figure}
+\end{center}
+
+
+
+We can see from our calculations that these measurements satisfy the Maximum Power Transfer Theorem, which states that the maximum power is delivered to the load when the load resistance is equal to the Thevenin resistance of the source ($R_L = R_{OUT} = 50$ Ohms)
 
 \subsection{Experiment 2.2: Electrostatic Transducers II}
 \subsubsection{Part A: Microphone}
 \begin{itemize}
 	\item We connected the connected the microphone to the oscilloscope by first connecting the microphone to the J1-4 port on the breadboard, then connecting the J1-4 to the J1-1 port, then connecting the oscilloscope to that J1-1 port. We then whistled into the microphone. We adjusted the trigger to 5 mV above the origin. By doing so, we were able to essentially "freeze" the sinusoid so that we could better view its properties. 
-	\item We then sang the 5 vowel sounds into the microphone. We found that the vowel A was the most sinusoid-like. \textit{Fig. 1} is the sound of an "A" in comparison to the sound of "O" in \textit{Fig. 2}. 
+	\item We then sang the 5 vowel sounds into the microphone. We found that the vowel A was the most sinusoid-like. \textit{Fig. 3} is the sound of an "A" in comparison to the sound of "O" in \textit{Fig. 4}. 
 \end{itemize}
 
 \begin{enumerate}
-	\item  We then played a perfect "A" tone off a smartphone speaker into the microphone. The resulting signal was a near-perfect sine wave with a frequency of 440 Hz as opposed to the vocally generated "A" signal in \textit{Fig. 1} with a frequency of 623 Hz. The discrepancy in frequency arose from the fact that a human can sing an "A" sound at a different pitch than the offical "A". 
+	\item  We then played a perfect "A" tone off a smartphone speaker into the microphone. The resulting signal was a near-perfect sine wave with a frequency of 440 Hz as opposed to the vocally generated "A" signal in \textit{Fig. 3} with a frequency of 623 Hz. The discrepancy in frequency arose from the fact that a human can sing an "A" sound at a different pitch than the offical "A". 
 \end{enumerate}
 
 \begin{center}
@@ -152,7 +191,7 @@ No pre-lab calculations were needed, but understanding of \textit{Figure 1} was 
 \end{center}
 
 \subsubsection{Part B: The Lab PC as a Signal Source}
-In this section, we connected the Lab PC to the oscilloscope by first connecting the lab PC to the J2-1 port, connecting the J2-1 port to the J1-3 port, and then connecting the speaker to the J1-3 port. We also kept the connection between the speaker and the oscilloscope from Part A. We then played the three sound files through the speaker and observed the signals through the oscilloscope. \textit{Fig 4.} displays the oscilloscope readings of the mystery signal. 
+In this section, we connected the Lab PC to the oscilloscope by first connecting the lab PC to the J2-1 port, connecting the J2-1 port to the J1-3 port, and then connecting the speaker to the J1-3 port. We also kept the connection between the speaker and the oscilloscope from Part A. We then played the three sound files through the speaker and observed the signals through the oscilloscope. \textit{Fig. 5} displays the oscilloscope readings of the mystery signal. 
 \begin{center}
 	\begin{figure} [H]
 		\centering
@@ -172,9 +211,9 @@ We begin this section by connecting the cathode of the photodiode to pin 14 and 
 	\item Photodiode covered by hand: -17.8 mV
 \end{itemize}
 
-We then set the oscilloscope to measure AC signals from the photodiode. The peak-to-peak amplitude of signal was 2.88 mV and the frequency was 196.83 kHz. The waveform is sinusoidal with periodic spikes in amplitude that occur in tight clumps depicted in \textit{Fig. 5} below. 
+We then set the oscilloscope to measure AC signals from the photodiode. The peak-to-peak amplitude of signal was 2.88 mV and the frequency was 196.83 kHz. The waveform is sinusoidal with periodic spikes in amplitude that occur in tight clumps depicted in \textit{Fig. 6} below. 
 \begin{center}
-	\begin{figure}
+	\begin{figure} [H]
 		\centering
 		\includegraphics[scale = 0.22]{images/zoom.png}
 		\caption{Oscilloscope Reading of AC signal from Photodiode}
@@ -183,8 +222,41 @@ We then set the oscilloscope to measure AC signals from the photodiode. The peak
 \end{center}
 
 \subsubsection{Part B: Light Emitting Diode}
+We began by connecting the red LED in series with a 220 Ohm resistor and the VirtualBench DC power supply. We then connected a voltmeter across the leads of the LED. We then began to slowly increase the voltage of power supply. The LED visibly began to glow at 1.7 V. When the power supply set to 
+\begin{itemize}
+	\item 3V, the LED voltage was 1.731 V and the LED was dimly lit
+	\item 4V, the LED voltage was 1.753 V and the LED was slightly brighter
+	\item 5V, the LED voltage was 1.767 V and the LED glowed brightly
+\end{itemize}
 
+We then swapped the DC power supply for a 100 Hz square wave. We found that a square wave needed a peak-to-peak amplitude of 3V for the LED to appear illuminated. We then began reducing the frequency of the square wave. At 40 Hz, the LED began to flicker. This frequency is reasonably close to the industry standard of shooting films at 24 fps. We noticed the flicker at 40 Hz because we were intently focusing on a single color at a single point. When looking at an entire screen with multiple moving objects, this frame rate gives the effect of a motion blur. 
 
+\subsubsection{Part C: Optical Communication}
+We left the setup for Part B in place (though we reset the square wave back to a frequency to 100 Hz). We connected the photodiode to CH1 of the oscilloscope and then held the photodiode head right above the red LED head and shielded the components with our hand. \textit{Fig. 7} depicts the oscilloscope reading. The waveform is ....
+\begin{center}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/opticalsquare.png}
+		\caption{Oscilloscope reading of a photodiode voltage when exposed to an LED powered by 100 Hz square wave}
+	\end{figure}
+\end{center}
+
+We then switched the square wave to a triangle wave as seen in \textit{Fig. 8}. The waveform appears to be 
+\begin{center}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/opticaltriangle.png}
+		\caption{Oscilloscope reading of a photodiode voltage when exposed to an LED powered by 100 Hz triangle wave}
+	\end{figure}
+\end{center}
+
+We reset the function generator to produce a 100 Hz square wave. We found that the maximum distance that we could transmit a signal from the LED to the photodiode was 24 inches. \\
+The above setup is a precursor to a basic optical communication system. However, we would also need 
+\begin{itemize}
+	\item some sort of tunnel so that there isn't any interference from ambient light
+	\item an encoder so that we can transform data into bits and an associated decoder so that it can decode the bits into the same information
+\end{itemize}
+A modern problem that has been experienced by Microsoft with their intercontinental optical communication system is that pirates will occasionally steal the cable as it is being laid down. Future efforts will likely be dedicated to solving this issue. 
 \medskip
 
 %\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
@@ -202,7 +274,7 @@ We then set the oscilloscope to measure AC signals from the photodiode. The peak
 \subsection{Experiment 2.1: Electroacoustic Transducers I}
 \qquad For Part A: we found that changing the two major properties of a sine wave, the frequency and the amplitude have direct effects on the output sound as the signal travels through a speaker. Increasing the frequency increases the pitch, and increases the amplitude increases the volume.
 
-For Part B: 
+For Part B: We found that the Thevenin Equivalent Resistance from the source does not change, which is unsurprising because it should be a constant value. We also replicated the Maximum Power Transfer figure by observing that the most power transfer occurred when $R_{OUT} = R_L$. 
 
 \subsection{Experiment 2.2: Electroacoustic Transducers II}
 For Part A: Instead of using a function generator to create an output, we used our own voices through a microphone to create signals. These signals were not as clear as the function generated signals, but it was obvious that they had the same relation to the frequency and amplitude. When this test was done for all vowels, it was clear that the "a" sound was the most sinusoidal, which makes sense when understanding why it is such a popular tuning frequency and an actual musical note. We also used the trigger function to better understand these irregular tones, as it helped to notice periodicity. There were also some interesting comparisons to be made when looking at the difference in our (poorly) sung "a" tone and the computer generated one. The computer generated tone was much more steady than the sung tone, even if it did not sound obvious it was visually obvious. 
@@ -219,13 +291,15 @@ For Part C: The waveform is almost what was expected for a square wave, just wit
 
 \medskip
 
-Figure \ref{fig:zoom}
 \section{Errors}
+\begin{itemize}
+	\item \textit{The vocally produced "A" in Section 2.2 Part B was not a perfect sinusoid of 440 Hz}: This error occurred because 1) an "A" sound can be sung at slightly different pitches and 2) an untrained human voice cannot sing a steady note. Remedy this error by getting a trained vocalist. 
+	\item \textit{Slight Discrepancies in Calculated $R_{OUT}$} For the 20 and 30 Ohm resistors, we strung 10 Ohm resistors in series, which caused the overall resistance to be slightly more than thirty. This explains why our calculated $R_{OUT}$ is slightly lower for these resistors. To remedy this, use more precise resistors. 
+\end{itemize}
 
-There are some errors that can be attributed to tolerance, and instrument errors that are always the case. There are some other errors that can be attributed to miscalculations and human error, such as those that including finding the threshold frequency or volume. Attempting to recreate this results mat lead to inaccurate answers due to changes in an individuals sensory perception.
 
 \medskip
 
-\textit{Note (To be deleted): Briefly list sources of error and discuss how to eliminate or deal with them}
+%\textit{Note (To be deleted): Briefly list sources of error and discuss how to eliminate or deal with them}
 
 \end{document}
