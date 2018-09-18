@@ -232,7 +232,7 @@ We began by connecting the red LED in series with a 220 Ohm resistor and the Vir
 We then swapped the DC power supply for a 100 Hz square wave. We found that a square wave needed a peak-to-peak amplitude of 3V for the LED to appear illuminated. We then began reducing the frequency of the square wave. At 40 Hz, the LED began to flicker. This frequency is reasonably close to the industry standard of shooting films at 24 fps. We noticed the flicker at 40 Hz because we were intently focusing on a single color at a single point. When looking at an entire screen with multiple moving objects, this frame rate gives the effect of a motion blur. 
 
 \subsubsection{Part C: Optical Communication}
-We left the setup for Part B in place (though we reset the square wave back to a frequency to 100 Hz). We connected the photodiode to CH1 of the oscilloscope and then held the photodiode head right above the red LED head and shielded the components with our hand. \textit{Fig. 7} depicts the oscilloscope reading. The waveform is ....
+We left the setup for Part B in place (though we reset the square wave back to a frequency to 100 Hz). We connected the photodiode to CH1 of the oscilloscope and then held the photodiode head right above the red LED head and shielded the components with our hand. \textit{Fig. 7} depicts the oscilloscope reading. The waveform takes on the expected square wave form (better seen in the zoomed out view at the top of \textit{Fig.7} as opposed to the slightly distorted main depiction). The reason why the peaks are slanted is likely caused by lags in the photodiode sensor (because of its physical characteristics) 
 \begin{center}
 	\begin{figure} [H]
 		\centering
@@ -241,7 +241,7 @@ We left the setup for Part B in place (though we reset the square wave back to a
 	\end{figure}
 \end{center}
 
-We then switched the square wave to a triangle wave as seen in \textit{Fig. 8}. The waveform appears to be 
+We then switched the square wave to a triangle wave as seen in \textit{Fig. 8}. We hypothesize that we might have oversaturated the photodiode by holding it too close to the LED emitter, thus, we obtained the following wave form. However, upon closer inspection, this appears to be the bottom portion of a triangle wave; the high voltages are cut off because we overloaded the photodiode by holding it too close. This can be better viewed by looking at the smaller top depiction of the waveform in \textit{Fig. 8}
 \begin{center}
 	\begin{figure} [H]
 		\centering
@@ -287,7 +287,7 @@ For Part A: The photodiode is essentially a tiny solar cell, so it was no surpri
 
 For Part B: The LED did not light at low voltages, probably because the current flowing through the circuit was not enough to produce a visible light. However, when the light was lit, increasing the voltage provided a clear increase in brightness. The including a square wave with varying frequencies provided interesting information as well, including the threshold at which we could see the flickering of the light, 40 Hz. This value is higher than that of movies, but of course we were much closer to the source and only looking at a single changing light which could have impacted our measurements. 
 
-For Part C: The waveform is almost what was expected for a square wave, just with a small falloff at the end of the waveform. The triangle wave was less expected, because the diode should only see part of the waveform due to the nature of the diode. The recognizable light pattern from the LED was picked up by the photodiode up to a distance of 2 feet, in optimal conditions such as behind a jacket. This technology is used in optical fibers today.
+For Part C: The waveform is almost what was expected for a square wave, just with a small falloff at the end of the waveform most likely due to lag in the photodiode. The triangle wave was less expected upon first glance; however, closer inspection reveals that it depicts the bottom portion of a triangle waveform. We hypothesize that we oversaturated the photodiode by holding it too close to the LED and thereby caused the photodiode to attenuate the higher-frequency portions of both the square and triangle waves. The recognizable light pattern from the LED was picked up by the photodiode up to a distance of 2 feet, in optimal conditions such as behind a jacket. This technology is used in optical fibers today.
 
 \medskip
 
@@ -296,6 +296,8 @@ For Part C: The waveform is almost what was expected for a square wave, just wit
 	\item \textit{The vocally produced "A" in Section 2.2 Part B was not a perfect sinusoid of 440 Hz}: This error occurred because 1) an "A" sound can be sung at slightly different pitches and 2) an untrained human voice cannot sing a steady note. Remedy this error by getting a trained vocalist. 
 	\item \textit{Slight Discrepancies in Calculated $R_{OUT}$} For the 20 and 30 Ohm resistors, we strung 10 Ohm resistors in series, which caused the overall resistance to be slightly more than thirty. This explains why our calculated $R_{OUT}$ is slightly lower for these resistors. To remedy this, use more precise resistors. 
 	\item \textit{The strange photodiode AC output in Section 2.3 Part A}: The reasons for possible error were discussed in the conclusion, and could possibly be remedied by avoiding the two issues faced. The differences could be minimized with a slower, and more methodical approach to finding the output signal of the photodiode. 
+	\item \textit{Distorted Waveforms in Experiment 2.3 Part C} The waveforms of the photodiode in response to the square waves and triangle wave signals from the red LED emitter look distorted likely due to the fact that we held the photodiode too close to the LED. This essentially oversaturated the photodiode, thus cutting off some of the higher voltage signals emitted by the LED. We can fix this problem in the future by holding the LED farther from the photodiode so that the photodiode can receive the full signal from the LED without high frequency attenuation. 
+>>>>>>> Stashed changes
 \end{itemize}
 
 
