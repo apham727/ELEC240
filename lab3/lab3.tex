@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage[numbered]{matlab-prettifier}
+\usepackage{siunitx}
 
 \newcommand{\documentTitle}{Lab 3 - Basic Circuits}
 \newcommand{\documentAuthor}{Andrew Pham, Aneel Damaraju}
@@ -58,7 +59,7 @@ In this lab, we explored Kirchoff's laws, and transfer functions through the use
 \medskip
 =======
 In the first section of this lab, we explored running various amounts of AC and DC current through a voltage divider of different voltages. We also used a potentiometer as a voltage divider and verified its accuracy. In the second portion of this lab, we measured the transfer function of an RC Circuit by measuring its phase and amplitude with various input frequencies, and we then compared it with the calculated transfer function generated using MATLAB. Finally, we simulated two different RC circuits using LTSpice software and plotted the gain of the circuit at various input frequencies. 
->>>>>>> 1db63375a68c027f2a2a70d9006851e3d113dc55
+
 
 %\textit{Note (To be deleted): Think of this test report as a document with your peers as your readers. This means you can assume a similar knowledge background as you. Your readers should be able to easily understand what is going on, and also be able to repeat your lab results based on your document and all references you cite.}
 
@@ -119,34 +120,52 @@ To measure the transfer function at a given frequency, we needed to measure both
 \subsection{Experiment 3.1: Resistive Voltage Dividers}
 \subsubsection{Part A}
 
-	 The voltage reading on the DMM by a 2$V_{pp}$ sine wave is $.704 V_rms$, or .704 $V_in$. The voltage reading on the DMM for a similar square wave is 1.096 $V_in$. Then, readings were done for various frequencies for the same value sine wave as used in the initial test. The results were as follows
-\begin{itemize} 
-	\item 5 Hz		.641V
-	\item 50 Hz		.701V
-	\item 500 Hz	.701V
-	\item 5 kHz		.49V
-	\item 50 kHz	0V
-\end{itemize}
+	 The voltage reading on the DMM by a 2$V_{pp}$ sine wave is $.704 V_{rms}$, or .704 $V_{in}$. The voltage reading on the DMM for a similar square wave is 1.096 $V_{in}$. Then, readings were done for various frequencies for the same value sine wave as used in the initial test. The results were as follows
+	\begin{table}[H]
+		\begin{center}
+			\caption{Voltage read by the DMM of the Sine Wave at given frequencies}
+			\label{tab: 31A}
+			\begin{tabular}{l|r}
+				\textbf{Frequency} & \textbf{Voltage}\\
+				(Hz) & (V)\\
+				\hline
+				5 & .641\\
+				50 & .701\\
+				500 & .701\\
+				5k & .49\\
+				50k & .0\\
+			\end{tabular}
+		\end{center}
+	\end{table}
 	It seems that the appropriate frequency for the DMM is 50-500 Hz to be safe, but more reasonably 10Hz-1kHz.
 \subsubsection{Part B}
-	 The voltage divider ratio should be $\frac{10,(10+10)} = ½ V_in$  for two 10 kOhm Resistors in series. For the sine wave, the output is $.351 V_ac$, which is 49\% of the initial Voltage, consistent with the voltage divider equation 
-	 At 47 Ohms the $V_out = .243$, which is inconsistent, with the voltage divider equation, indicating that the voltmeter may have inconsistent readings at low voltages. 
-	 At 1MOhm the output voltage is .335, indicating that there may be a range of acceptable resistance for the voltmeter, just like we noted an acceptable frequency range.
+	 The voltage divider ratio should be $\frac{10}{10+10} = \frac{1}{2} V_{in}$  for two \SI{10}{\kilo\ohm} Resistors in series. For the sine wave, the output is $.351 V_{ac}$, which is 49\% of the initial Voltage, consistent with the voltage divider equation 
+	 At 47 Ohms the $V_{out} = .243$, which is inconsistent, with the voltage divider equation, indicating that the voltmeter may have inconsistent readings at low voltages. 
+	 At 1 MOhms the output voltage is .335, indicating that there may be a range of acceptable resistance for the voltmeter, just like we noted an acceptable frequency range.
 \subsubsection{Part C} 
-	Using the same sine wave, but wih 100 Hz, the potentiometer is connected in series and the voltage drop across it is recorded. At the midpoint, $V_out = .386 or .55 V_in$ this value is reasonable within error for such an analog device. 
+	Using the same sine wave, but wih 100 Hz, the potentiometer is connected in series and the voltage drop across it is recorded. At the midpoint, $V_{out} = .386 or .55 V_{in}$ this value is reasonable within error for such an analog device. 
 	The values of the output voltage at different divisions are given below.
-	\begin{itemize}
-		\item 1 -.76V
-		\item 2 -.653V
-		\item 3 -.589V
-		\item 4 -.506V
-		\item 5 -.389V
-		\item 6 -.273V
-		\item 7 -.181V
-		\item 8 -.076V
-		\item 9 -0.002V
-		\item 10-0.0V
-	\end{itemize}
+\begin{table}[H]
+	\begin{center}
+		\caption{Voltage Across the Potentiometer at Each Division}
+		\label{tab: 31C}
+		\begin{tabular}{l|r}
+			\textbf{Division} & \textbf{Voltage}\\
+			(\#) & (V)\\
+			\hline
+			1 & .76\\
+			2 & .653\\
+			3 & .589\\
+			4 & .506\\
+			5 & .389\\
+			6 & .273\\
+			7 & .181\\
+			8 & .076\\
+			9 & .002\\
+			10 & 0.0\\
+		\end{tabular}
+	\end{center}
+\end{table}
  	It seems as if the values were evenly spaced as if they're were only 9 divisions, since the 9th and 10th both had 0V out.
 \subsection{Experiment 3.2: Filters and Transfer Function}
 \subsection{Part A}
@@ -172,14 +191,43 @@ To measure the transfer function at a given frequency, we needed to measure both
 	\end{tabular}
 \end{center}
 \end{table}
-
-These results from Table \ref{tab: 32A} were then used plotted onto Figure \ref{fig: 32A5}, using MATLAB. When compared to the values of Figure \ref{fig: 32A6} it can be seen that the experimental results match up with the actual results, confirming the transfer function of AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+\begin{center}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.4]{images/ourRC.png}
+		\caption{Visualization of the magnitude and phase plots for table \ref{tab: 32A}}
+		\label{fig:32A5}
+	\end{figure}
+\end{center}
+\begin{center}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.4]{images/matlabRC.png}
+		\caption{Using the given transfer function, used the supplied magphase function to generate the expected values}
+		\label{fig:32A6}
+	\end{figure}
+\end{center}
+These results from Table \ref{tab: 32A} were then used plotted onto Figure \ref{fig:32A5}, using MATLAB. When compared to the values of Figure \ref{fig:32A6} it can be seen that the experimental results match up with the actual results, confirming the transfer function of $\frac{1}{R*C*j*2\pi*f+1}$, where $R = \SI{2.2}{\kilo\ohm}$ and $C = \SI{.33}{\mu\farad}$. The experimental results, while scattered, are confirmed by the theoretical results. 
 
 \subsubsection{Part B}
-
-The screenshot of the LT spice AC analysis of an RC circuit can be seen in figure \ref{simpleRC}, The gain at low frequencies is 0 dB or 1 V/V. The cutoff frequency happens at approx. 250 Hz. At high frequencies the gain rolloff becomes almost linear, with a slope of -1 dB/dec. At low frequencies, the phase is $0\deg$ or in phase. At high frequencies the phase is $-90\deg$. This is because a capacitor will ideally lag in voltage when put in a circuit in series, and at low frequencies the capacitor acts more like a resistor.
-
-After adding the  
+\begin{center}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/simple.png}
+		\caption{LT Spice AC analysis of simple RC circuit built in lab, as observed, it is a low pass filter}
+		\label{fig:simpleRC}
+	\end{figure}
+\end{center}
+The screenshot of the LT spice AC analysis of an RC circuit can be seen in figure \ref{fig:simpleRC}, The gain at low frequencies is 0 dB or 1 V/V. The cutoff frequency happens at approx. 220 Hz. At high frequencies the gain rolloff becomes almost linear, with a slope of -1 dB/dec. At low frequencies, the phase is $0^\circ$ or in phase. At high frequencies the phase is $-90^\circ$. This is because a capacitor will ideally lag in voltage when put in a circuit in series, and at low frequencies the capacitor acts more like a resistor.
+\begin{center}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/cascade.png}
+		\caption{LT Spice AC analysis of the combination RC circuit. It is a low pass filter, but slightly more complex, due to the cascading RC element}
+		\label{fig:cascading}
+	\end{figure}
+\end{center}
+After adding the cascading RC circuit, the graph looks a little more interesting, including 2 bumps but a similar DC gain, as seen in Figure \ref{fig:cascading}. However, the cutoff frequency is approximately the same as before. The gain rolloff has changed, and in this case, it seems to have the same slope, maybe around -1 dB/dec. While the phase at high frequencies is 90$^\circ$, the DC phase is around 8$^\circ$. Cascading two identical filters can allow the phase to shift, even for low frequencies while keeping the cutoff frequency approximately the same.
 
 
 \section{References}
@@ -203,7 +251,5 @@ Your text here
 Your text here
 
 \medskip
-
-\textit{Note (To be deleted): Briefly list sources of error and discuss how to eliminate or deal with them}
 
 \end{document}
