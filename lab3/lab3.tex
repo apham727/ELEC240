@@ -53,13 +53,10 @@
 
 \section{Objective}
 
-<<<<<<< HEAD
-In this lab, we explored Kirchoff's laws, and transfer functions through the use of various circuit elements, such as potentiometers, and software, such as LT Spice
+In this lab, we explored Kirchoff's laws, and transfer functions through the use of various circuit elements, such as potentiometers, and software, such as LT Spice.
 
 \medskip
-=======
 In the first section of this lab, we explored running various amounts of AC and DC current through a voltage divider of different voltages. We also used a potentiometer as a voltage divider and verified its accuracy. In the second portion of this lab, we measured the transfer function of an RC Circuit by measuring its phase and amplitude with various input frequencies, and we then compared it with the calculated transfer function generated using MATLAB. Finally, we simulated two different RC circuits using LTSpice software and plotted the gain of the circuit at various input frequencies. 
-
 
 %\textit{Note (To be deleted): Think of this test report as a document with your peers as your readers. This means you can assume a similar knowledge background as you. Your readers should be able to easily understand what is going on, and also be able to repeat your lab results based on your document and all references you cite.}
 
@@ -144,6 +141,11 @@ To measure the transfer function at a given frequency, we needed to measure both
 	 At 1 MOhms the output voltage is .335, indicating that there may be a range of acceptable resistance for the voltmeter, just like we noted an acceptable frequency range.
 \subsubsection{Part C} 
 	Using the same sine wave, but wih 100 Hz, the potentiometer is connected in series and the voltage drop across it is recorded. At the midpoint, $V_{out} = .386 or .55 V_{in}$ this value is reasonable within error for such an analog device. 
+	 The voltage divider ratio should be $\frac{10}{(10+10)}$  for two 10 kOhm Resistors in series. For the sine wave, the output is $.351 V_{AC}$, which is 49\% of the initial Voltage, consistent with the voltage divider equation 
+	 At 47 Ohms the $V_{OUT} = .243$, which is inconsistent, with the voltage divider equation, indicating that the voltmeter may have inconsistent readings at low voltages. 
+	 At 1MOhm the output voltage is .335, indicating that there may be a range of acceptable resistance for the voltmeter, just like we noted an acceptable frequency range.
+\subsubsection{Part C} 
+	Using the same sine wave, but wih 100 Hz, the potentiometer is connected in series and the voltage drop across it is recorded. At the midpoint, $V_{OUT} = .386 or .55 V_{IN}$ this value is reasonable within error for such an analog device. 
 	The values of the output voltage at different divisions are given below.
 \begin{table}[H]
 	\begin{center}
@@ -168,7 +170,7 @@ To measure the transfer function at a given frequency, we needed to measure both
 \end{table}
  	It seems as if the values were evenly spaced as if they're were only 9 divisions, since the 9th and 10th both had 0V out.
 \subsection{Experiment 3.2: Filters and Transfer Function}
-\subsection{Part A}
+\subsubsection{Part A}
 	Measuring the frequency and the amplitude of the output voltage across an RC circuit. The values recorded can be seen below
 \begin{table}[H]
 \begin{center}
@@ -207,7 +209,7 @@ To measure the transfer function at a given frequency, we needed to measure both
 		\label{fig:32A6}
 	\end{figure}
 \end{center}
-These results from Table \ref{tab: 32A} were then used plotted onto Figure \ref{fig:32A5}, using MATLAB. When compared to the values of Figure \ref{fig:32A6} it can be seen that the experimental results match up with the actual results, confirming the transfer function of $\frac{1}{R*C*j*2\pi*f+1}$, where $R = \SI{2.2}{\kilo\ohm}$ and $C = \SI{.33}{\mu\farad}$. The experimental results, while scattered, are confirmed by the theoretical results. 
+These results from Table \ref{tab: 32A} were then used plotted onto Figure \ref{fig:32A5}, using MATLAB. When compared to the values of Figure \ref{fig:32A6} it can be seen that the experimental results match up with the calculated results, confirming the transfer function of $\frac{1}{RCj2\pi f+1}$, where $R = \SI{2.2}{\kilo\ohm}$ and $C = \SI{.33}{\mu\farad}$. The experimental results, while scattered, are confirmed by the theoretical results. 
 
 \subsubsection{Part B}
 \begin{center}
@@ -232,24 +234,29 @@ After adding the cascading RC circuit, the graph looks a little more interesting
 
 \section{References}
 
-Your text here
+\begin{itemize}
+	\item https://www.ece.rice.edu/~dpr2/elec240/lab3
+\end{itemize}
 
 \medskip
 
-\textit{Note (To be deleted): List any datasheets, websites, lab procedure, etc. used during the lab.}
+%\textit{Note (To be deleted): List any datasheets, websites, lab procedure, etc. used during the lab.}
 
 \section{Conclusion}
+In Part A of Experiment 3.1, we discovered that the useful frequency range of the digital multimeter was roughly 50-500Hz. We hypothesize that this limited frequency rate is due to the physical limitations of the multimeter in how fast it can read the signal; too fast a frequency, the DMM will not be able to fully record the waveform. \\ In Part B of the same experiment, we found that the voltmeter also has a limited voltage range that it can accurately measure. We received different values for $V_{OUT}$ for a 47$\Omega$ resistor and a 1$M\Omega$ resistor. We believe that this discrepancy arises from the fact that the voltmeter has a finite internal resistance; when measuring voltage through lower resistor values, this finite internal resistance of the voltmeter will appreciably affect the voltage measurement.  \\In Part C, we measured a 10$k\Omega$ potentiometer's resistance at its ten predefined intervals to see if the equation $V_{OUT} = \alpha V{IN}$ was correct, where $\alpha$ was a constant that corresponded to a fraction of $V_{IN}$ (i.e. $\alpha = 1$ means $V_{OUT} = 0.1V_{IN}$. This is assumption is mostly correct according to the data we recorded in Table \ref{tab: 31C}; however, we noticed that $V_{OUT}$ was essentially zero by the time we set the slider to the 9th position. This may have been due to a slight miscalibration in the potentionometer itself. \\\\
+In Part A of Experiment 3.2, we used the measurement techniques from the pre-lab section to measure the transfer function of a simple RC circuit that we built from a 2.2$k\Omega$ resistor and a 0.33$\mu F$ capacitor. We found that the measured magnitude and phase plots looked almost exactly like the MATLAB plots that we generated by entering the transfer function $\frac{1}{RCj2\pi f+1}$ into the \textit{magphase} function. These results validate both our  measuring techniques and the calculated transfer function. \\ In Part B of the same experiment, we used LTSpice to simulate a simple and a slightly more complex RC circuit to observe their various properties. For the simple RC circuit, we found that the rolloff of the gain is approximately 1 dB/dec. We also found that the phase of the RC circuit dropped much more quickly than the gain as frequency increased, going from $0^\circ$ at 1 Hz to nearly $-90^\circ$ at 100 kHz. This lag at high frequencies reflects the presence of a capacitor, which acts like a resistor at low frequencies (which do not cause phase shift) but causes high phase shifts at higher frequencies (capacitors take the derivative of voltage, which phase shifts by $-90^\circ$ by changing a sine to a cosine). We observed a similar magnitude plot for the more complex cascading RC circuit. However, we did note a difference in the phase plot, which had a brief bump around 500 kHz where it would be linear in the simpler RC circuit. Furthermore, the DC phase shift was approximately $8^\circ$. Thus, we conclude that putting RC circuits in cascade will maintain the cutoff frequency and the magnitude plot of the transfer function but will shift the phase plot. 
 
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): While the ``Results and Discussion'' section focused on the test results individually, the ``Conclusion'' discusses the results in the context of the entire experiment. Usually, the objectives given in the ``Introduction'' are reviewed to determine whether the experiment succeeded. If the objectives were not met, you should analyze why the results were not as predicted.}
+%\textit{Note (To be deleted): While the ``Results and Discussion'' section focused on the test results individually, the ``Conclusion'' discusses the results in the context of the entire experiment. Usually, the objectives given in the ``Introduction'' are reviewed to determine whether the experiment succeeded. If the objectives were not met, you should analyze why the results were not as predicted.}
 
 \section{Errors}
-
-Your text here
+\begin{itemize}
+	\item \textit{Did not receive a ratio of $V_{IN}/V_{OUT}=0.5$ for the 47 $\Omega$ resistor}: This is due to the fact that the voltmeter has a finite internal resistance. When a low resistance value is being measured, the effects of this finite internal resistance become higher. 
+	\item \textit{Voltmeter recorded a $V_{OUT}$ of 0 for division \#9}: This error is likely due to a miscalibration in the potentiometer that caused it to reach its maximum resistance slightly before the 10th turn of the slider knob. 
+\end{itemize}
+%Your text here
 
 \medskip
+
+%\textit{Note (To be deleted): Briefly list sources of error and discuss how to eliminate or deal with them}
 
 \end{document}
