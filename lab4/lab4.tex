@@ -13,13 +13,14 @@
 \usepackage{listings}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
+\usepackage{siunitx}
 \usepackage[numbered]{matlab-prettifier}
 
-\newcommand{\documentTitle}{Lab 4 - Signal Processing II: Active Circuits}
-\newcommand{\documentAuthor}{Andrew Pham, Aneel Damaraju}
-\newcommand{\courseTitle}{ELEC 240}
-\newcommand{\testDate}{September 26, 2018}
-\newcommand{\reportDate}{October 2, 2018}
+\newcommand{\documentTitle}{Lab 1 - Op-amps}
+\newcommand{\documentAuthor}{John Doe, Mary Smith}
+\newcommand{\courseTitle}{ELEC 244}
+\newcommand{\testDate}{January 17, 2018}
+\newcommand{\reportDate}{January 24, 2018}
 
 \geometry{margin=1in}
 \lstset{
@@ -52,76 +53,48 @@
 
 \section{Objective}
 
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): Think of this test report as a document with your peers as your readers. This means you can assume a similar knowledge background as you. Your readers should be able to easily understand what is going on, and also be able to repeat your lab results based on your document and all references you cite.}
-
-\textit{For the Objective section, identify the test you performed and its objectives. The objectives of the test are important to state because they are usually analyzed in the conclusion to determine whether the test succeeded.}
+In this lab, we worked on understanding the workings of both breadboards and Op-Amps. We learned how to wire and set up a breadboard for future use, a well as initialize an Op-Amp in your circuit. Experimental values were compared to calculated ones through the use of the oscilloscope. We learned how to create an inverting amplifier and how the values are gated by the DC offset as well as the power supply. Fiially,zen preparation for the lab next week, we assembled a circuit containing two microphones and a speaker in order to transmit and amplify external signals coming in the form of audio waves.
 
 \section{Materials}
+\begin{itemize}
+	\item Breadboard
+	\item 741 Op Amp
+	\item NI Virtual Bench
+	\item \SI{10}{\ohm} Resistor
+	\item \SI{100}{\ohm} Resistor
+	\item \SI{10}{\kilo\ohm} Resistor (2)
+	\item \SI{100}{\kilo\ohm} Resistor
+	\item \SI{.1}{\micro\farad} Capacitor
+	\item Dynamic Microphone
+	\item Telephone handset
+\end{itemize}
 
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): Provide a bullet point list of components, software tools, and hardware (such as the NI VirtualBench or DMM) used during the lab}
 
 \section{Test Description}
-
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): This section provides a summary of the test your team performed. Give enough information so readers can understand what you did, but do not go into the details of every step.}
+\subsection{The 741 Op Amp}
+After learning about the Op Amp, we compared open and closed loop configurations, and understood the concepts of DC offset amplification and clipping. By creating simple circuits in this format, we familiarized ourselves with the pins on the 741 Op Amp, and creating functional circuits that would not blow out the device.
+\subsection{The Inverting Configuration}
+In this smaller section of the lab, we focused on the functions of closed loop inverting amplifier configurations of the Op Amp. We learned about topics such as clipping and the slew rate, and how the internal properties of the Op Amp effect the output signal in comparison to the expected output.
+\subsection{Transducer Amplifiers}
+As the name implies, in this section we used what we knew about Op Amps to create an amplifier that worked on the audio signals created by a dynamic microphone. These signals were first viewed by the Virtual Bench, until the voltage was amplified to an acceptable level. Then, this circuit was attached to the circuit for a phone handset, to show that the Op Amp amplified the audio signal as well. 
 
 \subsection{Pre-Lab Calculations and Schematics}
 
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): Include the homework pre-calculations and schematics that serve as the initial setup for the test. Briefly explain the importance of each item you include. You may want to number your equations/figures so you can refer to them in later sections. Including photos of handwritten work is okay.}
+Before the lab, there we no calculations to be done, just some setup for the breadboard. To power all of the terminals we needed to set up the power bus, by connecting it to all 3 of the power rails as seen in Fig \ref{Fig: Breadboard}. After the power was properly connected, we noted the proper connections for the Interface Board connectors, which would be needed in the lab.
 
 \section{Results and Discussion}
 
-\qquad After setting up the Op-Amp into an open-loop response configuration in Part A for Experiment 4.1, we produced a 2 $V_{pp}$, 20 Hz sine wave. We measured the voltage output from the Op-Amp and observed a max voltage of 14.4 V and a minimum voltage of -13.6 V. We then connected a 100 $\Omega$ resistor between $v_{OUT}$ and ground. This caused the voltage to drop dramatically because the resistor itself has a significant voltage drop. We now observed a max voltage of 3.12 V and a minimum voltage of -1.64 V. After removing the 100 $\Omega$ resistor, we set the function generator to produce a square wave of the same frequency. We observed that $v_{OUT}$ becomes a square wave as well. We also noted some slew-rate limiting, where the slope of $v_{OUT}$ does not change as quickly as $v_{IN}$ when switching between high and low voltages. Furthermore, we noticed that $v_{OUT}$ exhibited 0.79V of DC offset despite the fact that the function generator was set to 0 DC offset. We hypothesized that this DC offset arises from the Op-Amp affecting the input voltage so that it is not perfectly magnified, thus yielding a nonzero DC offset. 
 
-\quad Overall, using an open-loop response configuration is not ideal due to the fact that distortions in the circuit are highly magnified. For example, the small DC offset in the Op-Amp was magnified to nearly a full volt, which caused clipping in the output signal (where the larger amplitude portions of the signal are cut off due to the limitations of the Op-Amp's power supply.)
-
-\quad We then built an inverting amplifier in Part A of Experiment 4.2. We then set the function generator to produce a 1 $V_{pp}$, 100 Hz sine wave. 
-
-\begin{centering}
-	\begin{figure} [H]
-		\centering
-		\includegraphics[scale=0.22]{images/invertingamplifier.png}
-		\caption{OpAmp Output in Response to 1 $V_{pp}$, 100 Hz sine wave}
-	\end{figure}
-\end{centering}
-
-
-
-\medskip
-
-%\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
 
 \section{References}
 
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): List any datasheets, websites, lab procedure, etc. used during the lab.}
+https://www.ece.rice.edu/~dpr2/elec240/lab4/
 
 \section{Conclusion}
 
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): While the ``Results and Discussion'' section focused on the test results individually, the ``Conclusion'' discusses the results in the context of the entire experiment. Usually, the objectives given in the ``Introduction'' are reviewed to determine whether the experiment succeeded. If the objectives were not met, you should analyze why the results were not as predicted.}
-
+\subsection{4.1: The 741 Op Amp}
+\subsubsection{Part A: Powering Up the 741 Op Amp}
+The first part of this lab was simply connecting the Op Amp to the breadboard and understanding the pins on the Op Amp. The 
 \section{Errors}
 
 Your text here
