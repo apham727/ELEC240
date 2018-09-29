@@ -15,11 +15,11 @@
 \usepackage[T1]{fontenc}
 \usepackage[numbered]{matlab-prettifier}
 
-\newcommand{\documentTitle}{Lab 1 - Op-amps}
-\newcommand{\documentAuthor}{John Doe, Mary Smith}
-\newcommand{\courseTitle}{ELEC 244}
-\newcommand{\testDate}{January 17, 2018}
-\newcommand{\reportDate}{January 24, 2018}
+\newcommand{\documentTitle}{Lab 4 - Signal Processing II: Active Circuits}
+\newcommand{\documentAuthor}{Andrew Pham, Aneel Damaraju}
+\newcommand{\courseTitle}{ELEC 240}
+\newcommand{\testDate}{September 26, 2018}
+\newcommand{\reportDate}{October 2, 2018}
 
 \geometry{margin=1in}
 \lstset{
@@ -86,11 +86,25 @@ Your text here
 
 \section{Results and Discussion}
 
-Your text here
+\qquad After setting up the Op-Amp into an open-loop response configuration in Part A for Experiment 4.1, we produced a 2 $V_{pp}$, 20 Hz sine wave. We measured the voltage output from the Op-Amp and observed a max voltage of 14.4 V and a minimum voltage of -13.6 V. We then connected a 100 $\Omega$ resistor between $v_{OUT}$ and ground. This caused the voltage to drop dramatically because the resistor itself has a significant voltage drop. We now observed a max voltage of 3.12 V and a minimum voltage of -1.64 V. After removing the 100 $\Omega$ resistor, we set the function generator to produce a square wave of the same frequency. We observed that $v_{OUT}$ becomes a square wave as well. We also noted some slew-rate limiting, where the slope of $v_{OUT}$ does not change as quickly as $v_{IN}$ when switching between high and low voltages. Furthermore, we noticed that $v_{OUT}$ exhibited 0.79V of DC offset despite the fact that the function generator was set to 0 DC offset. We hypothesized that this DC offset arises from the Op-Amp affecting the input voltage so that it is not perfectly magnified, thus yielding a nonzero DC offset. 
+
+\quad Overall, using an open-loop response configuration is not ideal due to the fact that distortions in the circuit are highly magnified. For example, the small DC offset in the Op-Amp was magnified to nearly a full volt, which caused clipping in the output signal (where the larger amplitude portions of the signal are cut off due to the limitations of the Op-Amp's power supply.)
+
+\quad We then built an inverting amplifier in Part A of Experiment 4.2. We then set the function generator to produce a 1 $V_{pp}$, 100 Hz sine wave. 
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/invertingamplifier.png}
+		\caption{OpAmp Output in Response to 1 $V_{pp}$, 100 Hz sine wave}
+	\end{figure}
+\end{centering}
+
+
 
 \medskip
 
-\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
+%\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
 
 \section{References}
 
