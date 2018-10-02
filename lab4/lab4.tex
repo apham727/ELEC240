@@ -80,7 +80,16 @@ As the name implies, in this section we used what we knew about Op Amps to creat
 
 \subsection{Pre-Lab Calculations and Schematics}
 
-Before the lab, there we no calculations to be done, just some setup for the breadboard. To power all of the terminals we needed to set up the power bus, by connecting it to all 3 of the power rails as seen in Fig \ref{Fig: Breadboard}. After the power was properly connected, we noted the proper connections for the Interface Board connectors, which would be needed in the lab.
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.65]{images/Breadboard.png}
+		\caption{The wiring needed to properly connect the power across the entire breadboard, as seen, the busses are horizontally, so +15V, GND and -15V power flows horizontally}			
+		\label{fig: Breadboard}
+	\end{figure}
+\end{centering}
+
+Before the lab, there we no calculations to be done, just some setup for the breadboard. To power all of the terminals we needed to set up the power bus, by connecting it to all 3 of the power rails as seen in Fig \ref{fig: Breadboard}. After the power was properly connected, we noted the proper connections for the Interface Board connectors, which would be needed in the lab.
 
 \section{Results and Discussion}
 
@@ -94,7 +103,8 @@ Before the lab, there we no calculations to be done, just some setup for the bre
 	\begin{figure} [H]
 		\centering
 		\includegraphics[scale=0.22]{images/invertingamplifier.png}
-		\caption{OpAmp Output in Response to 1 $V_{pp}$, 100 Hz sine wave}				\label{fig:invertingamp}
+		\caption{OpAmp Output in Response to 1 $V_{pp}$, 100 Hz sine wave}				
+		\label{fig:invertingamp}
 	\end{figure}
 \end{centering}
 
@@ -112,8 +122,11 @@ https://www.ece.rice.edu/~dpr2/elec240/lab4/
 \section{Conclusion}
 
 \subsection{4.1: The 741 Op Amp}
-\subsubsection{Part A: Powering Up the 741 Op Amp}
-The first part of this lab was simply connecting the Op Amp to the breadboard and understanding the pins on the Op Amp. The 
+The first part of this lab was simply connecting the Op Amp to the breadboard and understanding the pins on the Op Amp. Knowing where to wire the the positive and negative power of the Op Amp is of high value since it is pretty easy to short the Op Amp and blow it out. First we just looked at various types of common waveforms and their outputs through the oscilloscope. Then we compared the open and closed loop configurations of the the Op Amp circuit and noted the difference. after the tests it was determined that closed loop was optimal since it minimized the distortions present in the Op Amp, such as not magnifying the intrinsic DC offset of the Op Amp.
+
+\subsection{4.2: The Inverting Configuration}
+The inverting amplifier worked as advertised, and when the load resistance was equal to the incident resistance, the signal was inverted with a gain of 1. when the input voltage and the load resistance was changed, 
+
 \section{Errors}
 
 Your text here
