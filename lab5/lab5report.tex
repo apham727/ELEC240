@@ -103,11 +103,46 @@ Your text here
 
 \section{Results and Discussion}
 
-Your text here
+\subsection{Experiment 5.1: Virtual Instruments with Labview }
+\qquad We begin by working in Labview, and generating a simple signal. First, a dial, numeric value and waveform graph were added to the front panel of the project. Then on the block diagram, a sine waveform was connected to the dial and connected to the numeric value and a white noise generator and the sine wave output were added and output to the graph. The block diagram was also wired so that the dial controls sine frequency and the value controls the amplitude. 
 
-\medskip
+For Part B: We Then created a spectrum analyzer, to hopefully decode our noisy sine wave that is seen on the waveform graph. This is pretty straightforward thanks to Labview, and can be done simply by adding a power spectrum and power spectrum graph, and then assigning the entire graph to a while loop that continuously refreshes the power spectrum displayed. With the frequency spectrum set to 200Hz, a screenshot can be seen below.
+INSERT IMAGE
 
-\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
+Through changing the frequency the output of the power spectrum would shift, but the high amplitude of the noise, along with its pseudo random nature made it difficult to find any discernible patterns in the spectra.
+
+Through changing the controls, there were a few changes noticed in the in the output. The Db switch causes the offet values of the output to go to zero, while rescaling to magnifying the peaks. There were two different averaging modes that seemed to make the most impact, peak hold, which would record and hold peaks through frequency changes, and RMS averaging, which was useful to reduce the white noise effect. Finally, there was the weighting mode, linear simply holds the frequency and exponential causes smoothing due to the nature of exponential averaging.
+
+INSERT PICTURE HERE
+
+\subsection{Experiment 5.2: Signal Acquisition}
+
+As the name of the section implies, this section uses a DAQ cable for signal acquisition. The setup for this requires use of the Labview DAQ assistance, and controlling the number of samples and the rate of the DAQ. As seen, the VI is ready to acquire signals.
+
+INSERT IMAGES
+
+Once it is clear that the VI is functioning, changing the x and y on the output graph to a reasonable scale is next. Using other blocks the amplitude and rms Voltage were found to be amplitude = 670 mV, rms = 0.25 V. With the FGen disconnected, all the input receives is noise being sent to the signal.
+
+Part B:
+
+Varying the symmetry of the input slants the output waveform as well. Inputting a square wave leads to evenly spaced spikes with exponentially decaying amplitude, increasing the duty cycle over 50 leads to an increase in spectral spikes, implying that the new waveform is described by more sine waves than before. Changing to a log-y scale, the harmonics do fall off in a hyperbolic fashion. With the log log plot, the 1/f fall of does obey a linear 20dB/ decade slope. For a triangle wave, the slope is now 40 dB/ decade as expected. for a 15\% square wave, the signal acts like a pulse and obeys the sinc function falloff. 
+
+For Part C: 
+
+Wire the circuit to an RC lowpass (reading the voltage across the resistor). With the function generator acting as $V_in$ with a 50 Hz sine wave, it is clear that halving the frequency drops the output by around 6 dB as seen in the figure below.
+
+INSERT IMAGE 
+
+\subsection{Experiment 5.3: The Spectrum of Acoustic Signals}
+
+Part A:
+
+Using the circuit from last week, attach the spectrum analyzer across $V_out$. When trying to make a sustained a sound into the mic, the fundamental frequency was around 390 Hz. When changing sounds, it is clear that the frequency doesn't shift all that much, but the waveform changes. When keeping a constant "a" tone but changing pitch, the spectrum looks the same, but the lines change magnitude. Playing a whistle or a computer generated sound into the microphone leads to few harmonics and one large frequency. When comparing the output of the dynamic microphone and the telephone, it is clear that the dynamic microphone has less distortion. A fricative is a much sharper sound, with fewer lines on the spectrum and an avoiced fricative has even less, due to its sharp nature. After a series of tests, the bandwidth of sound seemed to be from 200 Hz to 1kHz, at a conservative estimate.
+
+Part B:
+
+Update the circuit from last week once more, attaching the sound card in parallel with the dynamic microphone.  After running the Shepard tone through the spectrum analyzer, it was clear how it sounded like the pitch was always increasing. It consisted of three harmonics and the amplitude of the harmonics would cycle, leading it to sound like the pitch of the tone is constantly increasing. 
+
 
 \section{References}
 
