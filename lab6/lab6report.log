@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.6.23)  20 OCT 2018 15:29
 entering extended mode
 **./lab6report.tex
@@ -6,6 +7,19 @@ LaTeX2e <2018-04-01> patch level 5
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  20 OCT 2018 14:42
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**lab6report.tex
+(./lab6report.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -19,6 +33,7 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+<<<<<<< HEAD
 ) ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.st
 y"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
@@ -28,6 +43,18 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+=======
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count87
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count89
 \float@exts=\toks14
@@ -35,6 +62,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks15
 \@floatcapt=\box27
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
 y"
 Package: amsmath 2017/09/02 v2.17a AMS math features
@@ -48,10 +76,22 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
 "
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen103
 ))
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
 "
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -78,6 +118,32 @@ LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count95
 \c@MaxMatrixCols=\count96
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 \dotsspace@=\muskip11
 \c@parentequation=\count97
 \dspbrk@lvl=\count98
@@ -96,11 +162,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
 sty"
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks21
 \labelindent=\skip46
@@ -109,6 +179,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box30
 \enitdp@description=\count102
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
 sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -128,16 +199,47 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
 ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
 x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
 Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
@@ -146,6 +248,14 @@ Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
 ty"
 Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 \captionmargin=\dimen115
 \captionmargin@=\dimen116
 \captionwidth=\dimen117
@@ -157,6 +267,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@ContinuedFloat=\count103
 Package caption Info: float package is loaded.
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
 .sty"
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
@@ -168,6 +279,17 @@ sty"
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count104
+\c@subtable=\count105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count106
@@ -176,6 +298,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box31
 \rot@mess@toks=\toks24
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
@@ -191,6 +314,20 @@ Package ifvtex Info: VTeX not detected.
 )
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
 sty"
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count107
@@ -205,11 +342,16 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen128
 \Gm@layoutvoffset=\dimen129
 \Gm@dimlist=\toks25
+<<<<<<< HEAD
 
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 cfg"))
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
 sty"
+=======
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 \lst@mode=\count110
 \lst@gtempboxa=\box32
 \lst@token=\toks26
@@ -223,19 +365,30 @@ sty"
 \lst@lineno=\count115
 \lst@maxwidth=\dimen133
 
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 \c@lstnumber=\count116
 \lst@skipnumbers=\count117
 \lst@framebox=\box33
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
 cfg"
 File: listings.cfg 2018/09/02 1.7 listings configuration
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 ))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
 sty"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -252,39 +405,61 @@ Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
+<<<<<<< HEAD
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+=======
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
 ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
@@ -292,11 +467,19 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
 .sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 )
 \@linkdim=\dimen134
 \Hy@linkcounter=\count118
 \Hy@pagecounter=\count119
 
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
@@ -318,10 +501,30 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count121
 LaTeX Info: Redefining \url on input line 5115.
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count120
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count121
+LaTeX Info: Redefining \url on input line 5041.
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 \XeTeXLinkMargin=\dimen135
 \Fld@menulength=\count122
 \Field@Width=\dimen136
 \Fld@charsize=\dimen137
+<<<<<<< HEAD
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -331,10 +534,22 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
+=======
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 \Hy@abspage=\count123
 \c@Item=\count124
 \c@Hfootnote=\count125
 )
+<<<<<<< HEAD
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
@@ -346,11 +561,24 @@ File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+=======
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count126
+\c@bookmark@seq@number=\count127
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip49
 )
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
@@ -365,6 +593,21 @@ source code
 
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifier.st
+y
+Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab 
+source code
+ (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -377,7 +620,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+=======
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
@@ -518,6 +766,7 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+<<<<<<< HEAD
 ) ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.st
 y"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -536,6 +785,25 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+=======
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 )
 \netBracketCount@mlpr=\count128
 \blkLvl@mlpr=\count129
@@ -544,7 +812,12 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 \jayDepth@mlpr=\skip51
 \sectionRuleOffset@mlpr=\skip52
 \toks@mlpr=\toks27
+<<<<<<< HEAD
 ) (lab6report.aux)
+=======
+)
+(./lab6report.aux)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 \openout1 = `lab6report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -563,14 +836,22 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 47.
+<<<<<<< HEAD
 
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+=======
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 47.
 
+<<<<<<< HEAD
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
+=======
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count131
 \scratchdimen=\dimen138
@@ -583,6 +864,7 @@ ii"
 \MPnumerator=\count135
 \makeMPintoPDFobject=\count136
 \everyMPtoPDFconversion=\toks29
+<<<<<<< HEAD
 )
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -591,14 +873,23 @@ Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
 y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+=======
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -642,6 +933,7 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count137
 \AtBeginShipoutBox=\box35
 Package hyperref Info: Link coloring OFF on input line 47.
+<<<<<<< HEAD
 
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -650,18 +942,31 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Users\Aneel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 )
 \c@section@level=\count138
 )
 LaTeX Info: Redefining \ref on input line 47.
 LaTeX Info: Redefining \pageref on input line 47.
 LaTeX Info: Redefining \nameref on input line 47.
+<<<<<<< HEAD
  (lab6report.out) (lab6report.out)
+=======
+
+(./lab6report.out) (./lab6report.out)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 \@outlinefile=\write3
 \openout3 = `lab6report.out'.
 
  [1
 
+<<<<<<< HEAD
 {C:/Users/Aneel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
  [3]
@@ -697,4 +1002,63 @@ PDF statistics:
  292 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <images/61a2khzsample.PNG,
+ id=46, 912.40875pt x 624.83438pt>
+File: images/61a2khzsample.PNG Graphic file (type png)
+
+<use images/61a2khzsample.PNG>
+Package pdftex.def Info: images/61a2khzsample.PNG used on input line 94.
+(pdftex.def)             Requested size: 200.73055pt x 137.46399pt.
+
+<images/51a11000input1000measured.PNG, id=50, 1445.4pt x 813.0375pt>
+File: images/51a11000input1000measured.PNG Graphic file (type png)
+
+<use images/51a11000input1000measured.PNG>
+Package pdftex.def Info: images/51a11000input1000measured.PNG used on input lin
+e 105.
+(pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
+ [2 <./images/61a2khzsample.PNG>]
+<images/51a13000input3000measured.PNG, id=63, 1445.4pt x 813.0375pt>
+File: images/51a13000input3000measured.PNG Graphic file (type png)
+
+<use images/51a13000input3000measured.PNG>
+Package pdftex.def Info: images/51a13000input3000measured.PNG used on input lin
+e 114.
+(pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
+ [3 <./images/51a11000input1000measured.PNG> <./images/51a13000input3000measure
+d.PNG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+ (./lab6report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Package rerunfilecheck Info: File `lab6report.out' has not changed.
+(rerunfilecheck)             Checksum: BCB244D6F716A14E0030DAB4E932CB99;411.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
+ ) 
+Here is how much of TeX's memory you used:
+ 10191 strings out of 493029
+ 151073 string characters out of 6136233
+ 346974 words of memory out of 5000000
+ 13598 multiletter control sequences out of 15000+600000
+ 13581 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,7n,39p,689b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
+440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti10
+00.pfb>
+Output written on lab6report.pdf (4 pages, 378176 bytes).
+PDF statistics:
+ 107 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> ce5b5e92fca9e58367b44462f646ad8ca14708b2
 
