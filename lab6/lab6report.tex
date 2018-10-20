@@ -52,37 +52,42 @@
 
 \section{Objective}
 
-Your text here
+The first objective of this lab was to understand the key concepts behind sampling, through use of varying the sampling frequency and input frequency of a given signal. There was also some inspection into another important factor in digital signal processing, quantization, and seeing how effective a quantized signal recreates an input. The second objective was more skills based, focusing on learning how to upload vocal signals to MATLAB through LabView. This included understanding the specgram and sound functions in MATLAB, as well qualitatively understanding some key features of spectral plots. For the final objective, we focused on learning about various types of filters and their frequency and unit sample responses.
 
 \medskip
-
-\textit{Note (To be deleted): Think of this test report as a document with your peers as your readers. This means you can assume a similar knowledge background as you. Your readers should be able to easily understand what is going on, and also be able to repeat your lab results based on your document and all references you cite.}
-
-\textit{For the Objective section, identify the test you performed and its objectives. The objectives of the test are important to state because they are usually analyzed in the conclusion to determine whether the test succeeded.}
-
 \section{Materials}
+\begin{itemize}
+	\item Virtual Bench (Software, Oscilloscope, Function Generator, DC Power Supply)
+	\item LabView
+	\item BNC Male to Clips cord
+	\item Oscilloscope Probe
+	\item Breadboard (with setup from Lab 4
+	\item 2 10 cm length wires (with 6 mm stripped on each end)
+	\item Digital Multimeter
+	\item 100 $k\Omega$ resistor
+	\item 2 100 $\Omega$ resistors
+	\item 1 $k\Omega$ resistor
+	\item 2 LM 741 Op-Amps
+	\item Telephone handset
+	\item Dynamic microphone
+	\item Smartphone (or some device to play audio from a speaker)
+	\item MATLAB
+	\item Lab PC
+\end{itemize}
 
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): Provide a bullet point list of components, software tools, and hardware (such as the NI VirtualBench or DMM) used during the lab}
 
 \section{Test Description}
 
-Your text here
+In Experiment 6.1, Part A, we connected the function generator to a LabView spectrum analyzer, and varied the input function. We created a sine wave and varied the frequency of it as well as the sampling frequency and checked what properties of the sampled wave would change. We focused on the fundamental frequency and how the output looked around the Nyquist frequency. For Part B, we added a quantizer to our spectrum analyzer and compared the quantized signal to the original signal. From there, we changed the number of quantized bits and qualitatively viewed the output.
 
-\medskip
+In Experiment 6.2, Part A, we created two Op-Amp circuits, one connecting the Lab PC sound card to the handset and one connecting the dynamic microphone to the DAQ cable. We then recorded two sounds, one being general human voice and the other being a single pitch whistle. For Part B, we simply loaded the signals into MATLAB and made sure that MATLAB could effectively recreate the now quantized sounds. For Part C, we took the signals and then plotted the magnitude of the signal as well as just a chunk of the signal.
 
-\textit{Note (To be deleted): This section provides a summary of the test your team performed. Give enough information so readers can understand what you did, but do not go into the details of every step.}
+In Experiment 6.3, Part A, we made changes to the signals amplitude and frequency and listened to the changes. We then added the two signals. For Part B, applied simple filters to the voice output, including cariable length boxcar filters and infinite impulse response filters. We found the unit sample, frequency and sound responses for each filter. For Part C, the same tests were done, but for the more complicated Butterworth and Finite Impulse responses.
+ 
 
 \subsection{Pre-Lab Calculations and Schematics}
 
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): Include the homework pre-calculations and schematics that serve as the initial setup for the test. Briefly explain the importance of each item you include. You may want to number your equations/figures so you can refer to them in later sections. Including photos of handwritten work is okay.}
+The Pre-Lab for this lab only included a general understanding of LabView and Virtual Bench, which was done in previous labs. The other information in this lab, is expected to be learned through examples found in the lab. 
 
 \section{Results and Discussion}
 
@@ -94,11 +99,7 @@ Your text here
 
 \section{References}
 
-Your text here
-
 \medskip
-
-\textit{Note (To be deleted): List any datasheets, websites, lab procedure, etc. used during the lab.}
 
 \section{Conclusion}
 
@@ -109,11 +110,5 @@ Your text here
 \textit{Note (To be deleted): While the ``Results and Discussion'' section focused on the test results individually, the ``Conclusion'' discusses the results in the context of the entire experiment. Usually, the objectives given in the ``Introduction'' are reviewed to determine whether the experiment succeeded. If the objectives were not met, you should analyze why the results were not as predicted.}
 
 \section{Errors}
-
-Your text here
-
-\medskip
-
-\textit{Note (To be deleted): Briefly list sources of error and discuss how to eliminate or deal with them}
-
+ 
 \end{document}
