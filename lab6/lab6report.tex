@@ -52,13 +52,13 @@
 
 \section{Objective}
 
-Your text here
+
 
 \medskip
 
-\textit{Note (To be deleted): Think of this test report as a document with your peers as your readers. This means you can assume a similar knowledge background as you. Your readers should be able to easily understand what is going on, and also be able to repeat your lab results based on your document and all references you cite.}
+%\textit{Note (To be deleted): Think of this test report as a document with your peers as your readers. This means you can assume a similar knowledge background as you. Your readers should be able to easily understand what is going on, and also be able to repeat your lab results based on your document and all references you cite.}
 
-\textit{For the Objective section, identify the test you performed and its objectives. The objectives of the test are important to state because they are usually analyzed in the conclusion to determine whether the test succeeded.}
+%\textit{For the Objective section, identify the test you performed and its objectives. The objectives of the test are important to state because they are usually analyzed in the conclusion to determine whether the test succeeded.}
 
 \section{Materials}
 
@@ -86,11 +86,38 @@ Your text here
 
 \section{Results and Discussion}
 
-Your text here
+In Experiment 6.1, Part A, we explored sampling a signal in the time domain. We began by connecting the function generator to pin 46, which was the input to the LabView software and generated a 5 $V_{pp}$, 300 Hz sine wave. We then sampled the signal at a rate of 10000 samples per second with average set to RMS averaging to achieve the following waveform graph in Fig \ref{fig:firstsample} below. 
 
-\medskip
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/61a2khzsample.PNG}
+		\caption{Sample of 5 $V_{pp}$, 300 Hz Sine Wave}
+		\label{fig:firstsample}
+	\end{figure}
+\end{centering}
 
-\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
+We then began to increase the frequency of the sine wave outputted by the function generator. When the output frequency was half of the sampling frequency, we observed that the samples alternated between positive and negative values. We began to observe aliasing past 5kHz, and the input frequency stopped matching the displayed frequency in Labview. For example, in Fig \ref{fig:11khz} and Fig \ref{fig:13khz} below, we can observe aliasing when the input frequency is 11 kHz and 13 kHz, respectively. 
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/51a11000input1000measured.PNG}
+		\caption{10 kHz Sample of 11kHz Sine Wave}
+		\label{fig:11khz}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/51a13000input3000measured.PNG}
+		\caption{10 kHz Sample of 11kHz Sine Wave}
+		\label{fig:13khz}
+	\end{figure}
+\end{centering}
+
+
 
 \section{References}
 
