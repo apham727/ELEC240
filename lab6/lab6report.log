@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  20 OCT 2018 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  20 OCT 2018 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -447,14 +447,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \sectionRuleOffset@mlpr=\skip52
 \toks@mlpr=\toks27
 )
-(./lab6report.aux
-
-LaTeX Warning: Label `fig:firstsample' multiply defined.
-
-
-LaTeX Warning: Label `fig:firstsample' multiply defined.
-
-)
+(./lab6report.aux)
 \openout1 = `lab6report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -575,13 +568,7 @@ File: images/61a2khzsample.PNG Graphic file (type png)
 Package pdftex.def Info: images/61a2khzsample.PNG used on input line 94.
 (pdftex.def)             Requested size: 200.73055pt x 137.46399pt.
 
-
-LaTeX Warning: Reference `fig:11khz' on page 2 undefined on input line 100.
-
-
-LaTeX Warning: Reference `fig:13khz' on page 2 undefined on input line 100.
-
-<images/51a11000input1000measured.PNG, id=48, 1445.4pt x 813.0375pt>
+<images/51a11000input1000measured.PNG, id=50, 1445.4pt x 813.0375pt>
 File: images/51a11000input1000measured.PNG Graphic file (type png)
 
 <use images/51a11000input1000measured.PNG>
@@ -589,7 +576,7 @@ Package pdftex.def Info: images/51a11000input1000measured.PNG used on input lin
 e 105.
 (pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
  [2 <./images/61a2khzsample.PNG>]
-<images/51a13000input3000measured.PNG, id=61, 1445.4pt x 813.0375pt>
+<images/51a13000input3000measured.PNG, id=63, 1445.4pt x 813.0375pt>
 File: images/51a13000input3000measured.PNG Graphic file (type png)
 
 <use images/51a13000input3000measured.PNG>
@@ -598,43 +585,36 @@ e 114.
 (pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
  [3 <./images/51a11000input1000measured.PNG> <./images/51a13000input3000measure
 d.PNG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
  (./lab6report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `lab6report.out' has not changed.
 (rerunfilecheck)             Checksum: BCB244D6F716A14E0030DAB4E932CB99;411.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 10193 strings out of 493029
- 151095 string characters out of 6136233
- 346881 words of memory out of 5000000
- 13599 multiletter control sequences out of 15000+600000
- 14357 words of font info for 37 fonts, out of 8000000 for 9000
+ 10191 strings out of 493029
+ 151073 string characters out of 6136233
+ 346974 words of memory out of 5000000
+ 13598 multiletter control sequences out of 15000+600000
+ 13581 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,7n,39p,534b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,7n,39p,689b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
-200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm12
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on lab6report.pdf (4 pages, 385877 bytes).
+ublic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
+440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti10
+00.pfb>
+Output written on lab6report.pdf (4 pages, 378176 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
  80 words of extra memory for PDF output out of 10000 (max. 10000000)
 
