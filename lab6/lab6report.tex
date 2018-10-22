@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 \documentclass[10pt]{article}
 
 \usepackage{lipsum}
@@ -148,3 +149,215 @@ Your text here
 \section{Errors}
  
 \end{document}
+=======
+\documentclass[10pt]{article}
+
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{rotating}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[numbered]{matlab-prettifier}
+
+\newcommand{\documentTitle}{Lab 6 - Digital Signal Processing}
+\newcommand{\documentAuthor}{Andrew Pham, Aneel Damaraju}
+\newcommand{\courseTitle}{ELEC 240}
+\newcommand{\testDate}{October 16, 2018}
+\newcommand{\reportDate}{October 23, 2018}
+
+\geometry{margin=1in}
+\lstset{
+    tabsize=4,
+    basicstyle={\ttfamily},
+    captionpos=b,
+    belowskip=1em,
+    aboveskip=1em,
+    numbers=left,
+	escapechar=\@,
+}
+
+\title{
+    \textbf{\courseTitle} \\
+    \textbf{\documentTitle} \\
+    \bigskip
+    \textbf{\large{Test performed: \testDate}} \\
+    \textbf{\large{Report submitted: \reportDate}} \\
+    \bigskip
+    \bigskip
+}
+\author{\documentAuthor}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\section{Objective}
+
+
+
+\medskip
+
+%\textit{Note (To be deleted): Think of this test report as a document with your peers as your readers. This means you can assume a similar knowledge background as you. Your readers should be able to easily understand what is going on, and also be able to repeat your lab results based on your document and all references you cite.}
+
+%\textit{For the Objective section, identify the test you performed and its objectives. The objectives of the test are important to state because they are usually analyzed in the conclusion to determine whether the test succeeded.}
+
+\section{Materials}
+
+Your text here
+
+\medskip
+
+\textit{Note (To be deleted): Provide a bullet point list of components, software tools, and hardware (such as the NI VirtualBench or DMM) used during the lab}
+
+\section{Test Description}
+
+Your text here
+
+\medskip
+
+\textit{Note (To be deleted): This section provides a summary of the test your team performed. Give enough information so readers can understand what you did, but do not go into the details of every step.}
+
+\subsection{Pre-Lab Calculations and Schematics}
+
+Your text here
+
+\medskip
+
+\textit{Note (To be deleted): Include the homework pre-calculations and schematics that serve as the initial setup for the test. Briefly explain the importance of each item you include. You may want to number your equations/figures so you can refer to them in later sections. Including photos of handwritten work is okay.}
+
+\section{Results and Discussion}
+
+In Experiment 6.1, Part A, we explored sampling a signal in the time domain. We began by connecting the function generator to pin 46, which was the input to the LabView software and generated a 5 $V_{pp}$, 300 Hz sine wave. We then sampled the signal at a rate of 10000 samples per second with average set to RMS averaging to achieve the following waveform graph in Fig \ref{fig:firstsample} below. 
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/61a2khzsample.PNG}
+		\caption{Sample of 5 $V_{pp}$, 300 Hz Sine Wave}
+		\label{fig:firstsample}
+	\end{figure}
+\end{centering}
+
+We then began to increase the frequency of the sine wave outputted by the function generator. When the output frequency was half of the sampling frequency, we observed that the samples alternated between positive and negative values. We began to observe aliasing past 5kHz, and the input frequency stopped matching the displayed frequency in Labview. For example, in Fig \ref{fig:11khz} and Fig \ref{fig:13khz} below, we can observe aliasing when the input frequency is 11 kHz and 13 kHz, respectively. 
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/51a11000input1000measured.PNG}
+		\caption{10 kHz Sample of 11kHz Sine Wave}
+		\label{fig:11khz}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/51a13000input3000measured.PNG}
+		\caption{10 kHz Sample of 11kHz Sine Wave}
+		\label{fig:13khz}
+	\end{figure}
+\end{centering}
+
+In the above figures, the output waveform is the alias of the input frequency, which occurs whenever twice the input frequency exceeds the sampling frequency. This concept is directly related to the Nyquist criterion, which states that no aliasing will occur as long as the sampling frequency is greater than or equal to twice the input frequency. Whenever the input frequency exceeds the Nyquist frequency, the input frequency is "folded over" into a lower. Thus, the 11 kHz signal was folded over the 10 kHz sampling frequency into a 1 kHz wave, and the 13 kHz signal was folded over the 10 kHz sampling frequency into a 3 kHz wave, as seen in the figures above. 
+
+We then switched the function generator to produce a square wave and a sine wave. On frequencies that were integer divisors of the sampling frequency, the wave appeared to be sampled correctly below 5 kHz. However, on other frequencies such as 1.3 kHz, both the triangle and square wave appeared distorted. We attribute this distortion to the fact that neither square waves nor triangle waves are bandlimited, which means that the Nyquist Sampling theorem does not apply to them.
+
+
+In Part B of Experiment 6.1, we explored amplitude quantization of discretely sampled signals. We began by producing a 1 kHz sine wave and feeding it into the amplitude quantizer that we constructed in Labview. As we increased the number of bits used by the quantizer, we noticed that the sampled sine wave became much more fluid and discerniblee. Likewise, as we decreased the number of bits, the sampled sine waveform became choppier and more step-like. We then switched the power spectrum graph to accept the discretely quantized sine wave as input rather than the original analog sine wave. We noticed that the amplitude of the power spectrum graph increased by 20\%. 
+
+In Experiment 6.2, Part A, we digitally recorded two signals. We began by constructing the two circuits below in Fig \ref{fig:circuit}.
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.5]{images/circuit.png}
+		\caption{Recording Circuit (Top) and Playback Circuit (Bottom)}
+		\label{fig:circuit}
+	\end{figure}
+\end{centering}
+
+We then recorded one signal where I spoke a phrase and another signal where I whistled into the microphone. We saved the two signals into a .xlsx file. In Part B, we loaded these signals into MATLAB and performed digital signal processing on them. When we ran the sound command in MATLAB with $F_s = 5 kHz$ rather than 10 kHz, we noticed that the pitch of the recording was one octave lower. This is because inputting a sampling frequency 1/2 of the original effectively tells MATLAB that the signal was recorded at half the speed it actually was recorded it, which effectively halves all the frequencies (hence the lower overall pitch). 
+
+In Part C, we performed spectral analysis on both the sound signals. We used a length $n=256$ discrete fourier transform. For a sampling rate of 10kHz, the time resolution was $n/f_s = 256/10kHz = 0.0256$ and the frequency resolution was $f_s/n = 10kHz/256 = 39.0625$. We then tried transforms of length 128 and 512. The length 128 transform halved the number of samples, which decreased the resolution. The time resolution of $n=128$ was $n/f_2 = 128/10kHz = 0.0128$ and the frequency resolution was $f_s/n = 10kHz/128 = 78.125$. The difference in sound quality was noticeable. The length 512 transform doubled the number of samples and thus the resolution, though the difference in the length 256 and 512 transforms was not as discernible.  The time resolution of $n=512$ was $n/f_2 = 512/10kHz = 0.0512$ and the frequency resolution was $f_s/n = 10kHz/512 = 19.53$.
+
+
+INSERT SPECGRAM HERE
+
+We then created a spectrogram of the musical signal, depicted below in Fig  \ref*{fig:whistle}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.5]{images/sig2specgram.png}
+		\caption{Spectrogram of Whistle}
+		\label{fig:whistle}
+	\end{figure}
+\end{centering}
+
+The four lines running horizontally at 1.8, 2.2, 3.6, and 4.4 kHz across the figure depict the four sine waves of these frequencies that constitute the whistle. 
+Upon closer observation, we can see that the whistle is actually comprised of two notes at two different harmonics. The base frequencies are 1.8 and 2.2 kHz while the 3.6 and 4.4 kHz frequencies is exactly twice the base frequencies. 
+
+In Experiment 6.3, Part A, we scaled the signals by constant values, which simply changed the volume of the signal. We also added the two signals together and observed them in both the audible and visual domains. When the signal sum was played back, it simply sounded like the two signals were played simultaneously. When we viewed the signal sum on the spectrogram, it appears like the magnitudes in the individual spectrograms were added together so that the spectrogram of the signal sums are just overlayed, as seen below in Fig \ref{fig:sum}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/combospecgram.png}
+		\caption{Spectrogram of Sum of Signal 1 and 2}
+		\label{fig:sum}
+	\end{figure}
+\end{centering}
+
+We then took the dot product of the two signals. When we observed the product signal when played back, we could still discern the individual signals; however, the signal had significantly more noise than the individual signals' sum. In the spectrogram of the signals' dot product, we could also make out the individual signals but with significantly more difficulty. The individual horizontal lines from the whistle remained prominent. However, the spikes from the spoken signal seemed to be more distorted and the red portions appeared to spread out into the higher frequencies, as seen below in Fig
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/multiplyspecgram.png}
+		\caption{Spectrogram of Dot Product of Signal 1 and 2}
+		\label{fig:multiply}
+	\end{figure}
+\end{centering}
+
+
+In Part B, we passed the signals through a Box Car filter. 
+
+ 
+
+\section{References}
+
+Your text here
+
+\medskip
+
+\textit{Note (To be deleted): List any datasheets, websites, lab procedure, etc. used during the lab.}
+
+\section{Conclusion}
+
+Your text here
+
+\medskip
+
+\textit{Note (To be deleted): While the ``Results and Discussion'' section focused on the test results individually, the ``Conclusion'' discusses the results in the context of the entire experiment. Usually, the objectives given in the ``Introduction'' are reviewed to determine whether the experiment succeeded. If the objectives were not met, you should analyze why the results were not as predicted.}
+
+\section{Errors}
+
+Your text here
+
+\medskip
+
+\textit{Note (To be deleted): Briefly list sources of error and discuss how to eliminate or deal with them}
+
+\end{document}
+>>>>>>> Stashed changes

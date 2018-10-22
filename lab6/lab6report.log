@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.6.23)  20 OCT 2018 15:36
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  20 OCT 2018 15:44
+>>>>>>> Stashed changes
 entering extended mode
 **./lab6report.tex
 (lab6report.tex
@@ -681,6 +685,7 @@ File: images/51a13000input3000measured.PNG Graphic file (type png)
 Package pdftex.def Info: images/51a13000input3000measured.PNG  used on input li
 ne 119.
 (pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
+<<<<<<< Updated upstream
 
 [4 <./images/51a11000input1000measured.PNG> <./images/51a13000input3000measured
 .PNG>]
@@ -719,4 +724,74 @@ PDF statistics:
  325 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
  80 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+ [3 <./images/51a11000input1000measured.PNG> <./images/51a13000input3000measure
+d.PNG>]
+<images/circuit.png, id=71, 493.845pt x 417.81094pt>
+File: images/circuit.png Graphic file (type png)
+ <use images/circuit.png>
+Package pdftex.def Info: images/circuit.png used on input line 132.
+(pdftex.def)             Requested size: 246.92189pt x 208.90495pt.
+
+<images/sig2specgram.png, id=72, 1053.9375pt x 790.45313pt>
+File: images/sig2specgram.png Graphic file (type png)
+
+<use images/sig2specgram.png>
+Package pdftex.def Info: images/sig2specgram.png used on input line 150.
+(pdftex.def)             Requested size: 526.96747pt x 395.22559pt.
+
+Overfull \hbox (57.21245pt too wide) in paragraph at lines 150--151
+ [][] 
+ []
+
+[4 <./images/circuit.png>]
+<images/combospecgram.png, id=82, 1053.9375pt x 790.45313pt>
+File: images/combospecgram.png Graphic file (type png)
+
+<use images/combospecgram.png>
+Package pdftex.def Info: images/combospecgram.png used on input line 164.
+(pdftex.def)             Requested size: 231.86696pt x 173.90022pt.
+ [5 <./images/sig2specgram.png (PNG copy)>]
+<images/multiplyspecgram.png, id=89, 1053.9375pt x 790.45313pt>
+File: images/multiplyspecgram.png Graphic file (type png)
+
+<use images/multiplyspecgram.png>
+Package pdftex.def Info: images/multiplyspecgram.png used on input line 175.
+(pdftex.def)             Requested size: 231.86696pt x 173.90022pt.
+ [6 <./images/combospecgram.png (PNG copy)> <./images/multiplyspecgram.png (PNG
+ copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
+ (./lab6report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
+Package rerunfilecheck Info: File `lab6report.out' has not changed.
+(rerunfilecheck)             Checksum: BCB244D6F716A14E0030DAB4E932CB99;411.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
+ ) 
+Here is how much of TeX's memory you used:
+ 10223 strings out of 493029
+ 151716 string characters out of 6136233
+ 347253 words of memory out of 5000000
+ 13618 multiletter control sequences out of 15000+600000
+ 13581 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,7n,39p,885b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on lab6report.pdf (7 pages, 802096 bytes).
+PDF statistics:
+ 142 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> Stashed changes
 
