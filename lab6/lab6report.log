@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  23 OCT 2018 09:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  23 OCT 2018 10:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,40 +6,6 @@ entering extended mode
 (./lab6report.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 <
-     <<<<<< Updated upstream
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no < in font nullfont!
-Missing character: There is no < in font nullfont!
-Missing character: There is no < in font nullfont!
-Missing character: There is no < in font nullfont!
-Missing character: There is no < in font nullfont!
-Missing character: There is no < in font nullfont!
-Missing character: There is no < in font nullfont!
-Missing character: There is no U in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -51,17 +17,12 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@subsubsection=\count82
 \c@paragraph=\count83
 \c@subparagraph=\count84
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--289
-[]
- []
-
 \c@figure=\count85
 \c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+)
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count87
@@ -486,29 +447,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \sectionRuleOffset@mlpr=\skip52
 \toks@mlpr=\toks27
 )
-(./lab6report.aux
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 <
-      <<<<<< Updated upstream
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Label `fig:firstsample' multiply defined.
-
-
-LaTeX Warning: Label `fig:11khz' multiply defined.
-
-
-LaTeX Warning: Label `fig:13khz' multiply defined.
-
-)
+(./lab6report.aux)
 \openout1 = `lab6report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -619,102 +558,126 @@ LaTeX Info: Redefining \nameref on input line 48.
 \@outlinefile=\write3
 \openout3 = `lab6report.out'.
 
- [2
+ [1
 
-] [3] [4]
-<images/61a2khzsample.PNG, id=61, 912.40875pt x 624.83438pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] <images/61a2khzsample.
+PNG, id=54, 912.40875pt x 624.83438pt>
 File: images/61a2khzsample.PNG Graphic file (type png)
 
 <use images/61a2khzsample.PNG>
 Package pdftex.def Info: images/61a2khzsample.PNG used on input line 100.
 (pdftex.def)             Requested size: 200.73055pt x 137.46399pt.
 
-<images/51a11000input1000measured.PNG, id=65, 1445.4pt x 813.0375pt>
+<images/51a11000input1000measured.PNG, id=58, 1445.4pt x 813.0375pt>
 File: images/51a11000input1000measured.PNG Graphic file (type png)
 
 <use images/51a11000input1000measured.PNG>
 Package pdftex.def Info: images/51a11000input1000measured.PNG used on input lin
 e 111.
 (pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
- [5 <./images/61a2khzsample.PNG>]
-<images/51a13000input3000measured.PNG, id=75, 1445.4pt x 813.0375pt>
+ [3 <./images/61a2khzsample.PNG>]
+<images/51a13000input3000measured.PNG, id=68, 1445.4pt x 813.0375pt>
 File: images/51a13000input3000measured.PNG Graphic file (type png)
 
 <use images/51a13000input3000measured.PNG>
 Package pdftex.def Info: images/51a13000input3000measured.PNG used on input lin
 e 120.
 (pdftex.def)             Requested size: 317.98898pt x 178.8688pt.
- [6 <./images/51a11000input1000measured.PNG> <./images/51a13000input3000measure
+ [4 <./images/51a11000input1000measured.PNG> <./images/51a13000input3000measure
 d.PNG>]
-<images/circuit.png, id=83, 493.845pt x 417.81094pt>
+<images/circuit.png, id=76, 493.845pt x 417.81094pt>
 File: images/circuit.png Graphic file (type png)
  <use images/circuit.png>
 Package pdftex.def Info: images/circuit.png used on input line 138.
 (pdftex.def)             Requested size: 246.92189pt x 208.90495pt.
 
-<images/sig2specgram.png, id=84, 1053.9375pt x 790.45313pt>
+<images/dftTruncated.png, id=78, 1053.9375pt x 790.45313pt>
+File: images/dftTruncated.png Graphic file (type png)
+
+<use images/dftTruncated.png>
+Package pdftex.def Info: images/dftTruncated.png used on input line 154.
+(pdftex.def)             Requested size: 231.86696pt x 173.90022pt.
+ [5 <./images/circuit.png>]
+<images/sig2specgram.png, id=87, 1053.9375pt x 790.45313pt>
 File: images/sig2specgram.png Graphic file (type png)
 
 <use images/sig2specgram.png>
-Package pdftex.def Info: images/sig2specgram.png used on input line 156.
+Package pdftex.def Info: images/sig2specgram.png used on input line 165.
 (pdftex.def)             Requested size: 526.96747pt x 395.22559pt.
 
-Overfull \hbox (57.21245pt too wide) in paragraph at lines 156--157
+Overfull \hbox (57.21245pt too wide) in paragraph at lines 165--166
  [][] 
  []
 
-[7 <./images/circuit.png>]
-<images/combospecgram.png, id=94, 1053.9375pt x 790.45313pt>
+[6 <./images/dftTruncated.png (PNG copy)> <./images/sig2specgram.png (PNG copy)
+>] <images/combospecgram.png, id=94, 1053.9375pt x 790.45313pt>
 File: images/combospecgram.png Graphic file (type png)
 
 <use images/combospecgram.png>
-Package pdftex.def Info: images/combospecgram.png used on input line 170.
+Package pdftex.def Info: images/combospecgram.png used on input line 179.
 (pdftex.def)             Requested size: 231.86696pt x 173.90022pt.
- [8 <./images/sig2specgram.png (PNG copy)>]
-<images/multiplyspecgram.png, id=101, 1053.9375pt x 790.45313pt>
+
+<images/multiplyspecgram.png, id=95, 1053.9375pt x 790.45313pt>
 File: images/multiplyspecgram.png Graphic file (type png)
 
 <use images/multiplyspecgram.png>
-Package pdftex.def Info: images/multiplyspecgram.png used on input line 181.
+Package pdftex.def Info: images/multiplyspecgram.png used on input line 190.
 (pdftex.def)             Requested size: 231.86696pt x 173.90022pt.
- [9 <./images/combospecgram.png (PNG copy)> <./images/multiplyspecgram.png (PNG
+ [7 <./images/combospecgram.png (PNG copy)> <./images/multiplyspecgram.png (PNG
  copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+<images/73bss1.png, id=104, 1053.9375pt x 790.45313pt>
+File: images/73bss1.png Graphic file (type png)
+ <use images/73bss1.png>
+Package pdftex.def Info: images/73bss1.png used on input line 202.
+(pdftex.def)             Requested size: 231.86696pt x 173.90022pt.
+
+<images/lowpassfilter73b.png, id=106, 1053.9375pt x 790.45313pt>
+File: images/lowpassfilter73b.png Graphic file (type png)
+
+<use images/lowpassfilter73b.png>
+Package pdftex.def Info: images/lowpassfilter73b.png used on input line 213.
+(pdftex.def)             Requested size: 231.86696pt x 173.90022pt.
+ [8 <./images/73bss1.png (PNG copy)> <./images/lowpassfilter73b.png (PNG copy)>
+]
+<images/unitsample50orderFIR.png, id=114, 1053.9375pt x 790.45313pt>
+File: images/unitsample50orderFIR.png Graphic file (type png)
+
+<use images/unitsample50orderFIR.png>
+Package pdftex.def Info: images/unitsample50orderFIR.png used on input line 228
+.
+(pdftex.def)             Requested size: 231.86696pt x 173.90022pt.
+ [9 <./images/unitsample50orderFIR.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
  [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
  (./lab6report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
 Package rerunfilecheck Info: File `lab6report.out' has not changed.
 (rerunfilecheck)             Checksum: BCB244D6F716A14E0030DAB4E932CB99;411.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
  ) 
 Here is how much of TeX's memory you used:
- 10233 strings out of 493029
- 151829 string characters out of 6136233
- 349332 words of memory out of 5000000
- 13625 multiletter control sequences out of 15000+600000
- 13916 words of font info for 37 fonts, out of 8000000 for 9000
+ 10260 strings out of 493029
+ 152469 string characters out of 6136233
+ 349593 words of memory out of 5000000
+ 13644 multiletter control sequences out of 15000+600000
+ 13230 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,7n,39p,885b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
-fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+ 36i,7n,39p,885b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
+/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
 share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on lab6report.pdf (10 pages, 802881 bytes).
+sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on lab6report.pdf (10 pages, 1025342 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 100 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

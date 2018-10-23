@@ -118,7 +118,7 @@ We then began to increase the frequency of the sine wave outputted by the functi
 	\begin{figure} [H]
 		\centering
 		\includegraphics[scale=0.22]{images/51a13000input3000measured.PNG}
-		\caption{10 kHz Sample of 11kHz Sine Wave}
+		\caption{10 kHz Sample of 13kHz Sine Wave}
 		\label{fig:13khz}
 	\end{figure}
 \end{centering}
@@ -146,7 +146,16 @@ We then recorded one signal where I spoke a phrase and another signal where I wh
 In Part C, we performed spectral analysis on both the sound signals. We used a length $n=256$ discrete fourier transform. For a sampling rate of 10kHz, the time resolution was $n/f_s = 256/10kHz = 0.0256$ and the frequency resolution was $f_s/n = 10kHz/256 = 39.0625$. We then tried transforms of length 128 and 512. The length 128 transform halved the number of samples, which decreased the resolution. The time resolution of $n=128$ was $n/f_2 = 128/10kHz = 0.0128$ and the frequency resolution was $f_s/n = 10kHz/128 = 78.125$. The difference in sound quality was noticeable. The length 512 transform doubled the number of samples and thus the resolution, though the difference in the length 256 and 512 transforms was not as discernible.  The time resolution of $n=512$ was $n/f_2 = 512/10kHz = 0.0512$ and the frequency resolution was $f_s/n = 10kHz/512 = 19.53$.
 
 
-INSERT SPECGRAM HERE
+We then extracted a length 256 chunk from the speech signal at the 10,000 index of n. We then computed the fourier transform of this chunk using the fft function in MATLAB. We then truncated the signal and plotted it on a logarithmic scale on the y-axis to achieve the following Fig \ref{fig:dft}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/dftTruncated.png}
+		\caption{Discrete Fourier Transform of Truncated Speech Signal}
+		\label{fig:dft}
+	\end{figure}
+\end{centering}
 
 We then created a spectrogram of the musical signal, depicted below in Fig  \ref*{fig:whistle}
 
@@ -185,24 +194,66 @@ We then took the dot product of the two signals. When we observed the product si
 \end{centering}
 
 
-In Part B, we first passed the signals through a Box Car filter of length 5. 
+In Part B, we first passed the signals through a Box Car filter of length 5. We then computed the frequency response of the filter in MATLAB using the freqz function to yield the following response graph depicted below in Fig \ref{fig:Boxcar5}
 
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/73bss1.png}
+		\caption{Frequency Response of Length 5 Boxcar Filter}
+		\label{fig:Boxcar5}
+	\end{figure}
+\end{centering}
+
+We then applied this filter to our first speech signal and observed the following spectrogram in Fig \ref{fig:Boxcar5Spec}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/lowpassfilter73b.png}
+		\caption{Spectrogram of Length 5 Boxcar Filter Applied to Speech Signal}
+		\label{fig:Boxcar5Spec}
+	\end{figure}
+\end{centering}
+
+By referencing the spectrogram of the original signal, we can see that the length 5 boxcar filter acts somehwat as a low-pass by attenuating the higher frequencies. The low-pass nature was more clear when we played back the sound; the higher frequencies were filtered out, resulting in a more muffled signal whose speech was lower on average and a little harder to make out clearly. The blue areas of the spectrogram correspond to the filtered-out frequencies. 
+After repeating the same process for a length 10 boxcar filter, we concluded that the relationship between filter length of frequency response was that the longer filter was "stronger" by filtering out more of the background noise; however, it would also filter out more of the meaningful changes in frequency. 
+We then implemented an infinite impulse response filter that acted as a low-pass filter by having one positive and one negative "a" coefficient. The low-pass nature was also evident in the playback because the voice sounded lower and there was less high-frequency noise. We also noted that the speech playback sounded clearer than the boxcar-filtered signal. We then changed the negative sign of one of the "a" coefficients to positive and noticed that the IIR filter became a high-pass filter. This could be heard in the audio playback because the voice was much clearer and the low-frequencies of the voice as well as the low-frequency background noise were gone. 
+
+In Part C of Experiment 7.3, we implemented a 5th order lowpass Butterworth filter. We found that this filter was much more ideal than the length-5 boxcar filter when we played the signal back; the signal sounded much less distorted. We then created a 50th order Butterworth filter and observed the unit-sample response of the filter depicted below in Fig \ref{fig:50order}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.22]{images/unitsample50orderFIR.png}
+		\caption{Unit Sample Response of 50th Order Butterworth Filter}
+		\label{fig:50order}
+	\end{figure}
+\end{centering}
+
+The unit sample response is characteristic of band-pass filter; only a finite range of frequencies in the middle are allowed through. We then passed the signal through this bandpass filter and observed that the filtered signal sounded much more muffled than the high-pass filtered signal; this was because the bandpass was filtering out both high and low frequencies, and we only heard the midrange speech signals, which are only a fraction of the range of speech frequencies. 
 
 \medskip
 
 
 \section{References}
-
+\begin{itemize}
+	\item https://www.ece.rice.edu/~dpr2/elec240/lab6/
+\end{itemize}
 \medskip
 
 \section{Conclusion}
 
-Your text here
+In 6.1 we experimented with general ideas of sampling and quantization through the use of LabView and various ways that LabView was able to provide tools to assist in the use of signal reconstruction. We also looked at the importance of the Nyquist frequency and aliasing caused by too low of a sampling rate. Viewing the power spectrum of the discretely quantized wave was also done and was compared to its analog counterpart.
+
+In 6.2, we started by understanding how to use two separate Op-Amp circuits as well as LabView to create a recorded vocal message. This message was saved as a series of output voltages and converted as a csv file to MATLAB. Through MATLAB, it was confirmed that this signal could be recovered, confirming that the circuits created in 6.2 actually worked as expected. When changing the sampling frequency in MATLAB, we could change the pitch and length of the output tone. Finally, we observed the spectrum of the signal, both through the spectrogram and the FFT of the signal. It was very clear from the recorded outputs which one of the spectrograms was a speech signal and which was a solid whistle due to the number of frequencies with strong outputs for each. 
+
+In 6.3, we explored various signal processing and filtering techniques. Simply varying the output of the sound changes the amplitude of the sound. Adding the digital representations of the sound adds the output sounds, but multiplying them scrambles the output, as expected. We also looked into boxcar filters, and how they act as low pass filter of sorts. We then looked at both IIR and FIR filters and noticed how while IIR can be either highpass or lowpass, FIR can also function as a bandpass filter. These different filters, along with the Butterworth filter, were all viewed simply using the unit sample response and the  frequency response to explicitly learn these methods and understand their general transfer functions. 
 
 \medskip
 
-\textit{Note (To be deleted): While the ``Results and Discussion'' section focused on the test results individually, the ``Conclusion'' discusses the results in the context of the entire experiment. Usually, the objectives given in the ``Introduction'' are reviewed to determine whether the experiment succeeded. If the objectives were not met, you should analyze why the results were not as predicted.}
 
 \section{Errors}
+One error we encountered was in the musical whistle signal during the recording process. The whistle was not a clean note; there were periods where the whistler was only blowing air into the mic, which likely resulted in high amounts of noise because of the large volume of air flowing over the microphone. This resulted in our data for this signal having a lot of noise and the whistle signal not being as prominent as we would've liked. In the future, we should produce a cleaner whistle so that it is more clear what happens when we filter this signal. 
  
 \end{document}
