@@ -139,11 +139,14 @@ In Part B of Experiment 6.1, we explored amplitude quantization of discretely sa
 
 \section{Conclusion}
 
-Your text here
+In 6.1 we experimented with general ideas of sampling and quantization through the use of LabView and various ways that LabView was able to provide tools to assist in the use of signal reconstruction. We also looked at the importance of the Nyquist frequency and aliasing caused by too low of a sampling rate. Viewing the power spectrum of the discretely quantized wave was also done and was compared to its analog counterpart.
+
+In 6.2, we started by understanding how to use two separate Op-Amp circuits as well as LabView to create a recorded vocal message. This message was saved as a series of output voltages and converted as a csv file to MATLAB. Through MATLAB, it was confirmed that this signal could be recovered, confirming that the circuits created in 6.2 actually worked as expected. When changing the sampling frequency in MATLAB, we could change the pitch and length of the output tone. Finally, we observed the spectrum of the signal, both through the spectrogram and the FFT of the signal. It was very clear from the recorded outputs which one of the spectrograms was a speech signal and which was a solid whistle due to the number of frequencies with strong outputs for each. 
+
+In 6.3, we explored various signal processing and filtering techniques. Simply varying the output of the sound changes the amplitude of the sound. Adding the digital representations of the sound adds the output sounds, but multiplying them scrambles the output, as expected. We also looked into boxcar filters, and how they act as low pass filter of sorts. We then looked at both IIR and FIR filters and noticed how while IIR can be either highpass or lowpass, FIR can also function as a bandpass filter. These different filters, along with the Butterworth filter, were all viewed simply using the unit sample response and the  frequency response to explicitly learn these methods and understand their general transfer functions. 
 
 \medskip
 
-\textit{Note (To be deleted): While the ``Results and Discussion'' section focused on the test results individually, the ``Conclusion'' discusses the results in the context of the entire experiment. Usually, the objectives given in the ``Introduction'' are reviewed to determine whether the experiment succeeded. If the objectives were not met, you should analyze why the results were not as predicted.}
 
 \section{Errors}
  
