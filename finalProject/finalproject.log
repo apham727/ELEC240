@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  6 NOV 2018 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  27 NOV 2018 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -560,35 +560,64 @@ LaTeX Info: Redefining \nameref on input line 47.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] <images/amdiagram.png,
+ id=71, 434.62375pt x 95.35625pt>
+File: images/amdiagram.png Graphic file (type png)
+
+<use images/amdiagram.png>
+Package pdftex.def Info: images/amdiagram.png used on input line 145.
+(pdftex.def)             Requested size: 347.69946pt x 76.28508pt.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+<images/analogmixer.png, id=79, 539.01375pt x 192.72pt>
+File: images/analogmixer.png Graphic file (type png)
+
+<use images/analogmixer.png>
+Package pdftex.def Info: images/analogmixer.png used on input line 179.
+(pdftex.def)             Requested size: 269.50621pt x 96.35976pt.
+ [4 <./images/amdiagram.png> <./images/analogmixer.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
  (./finalproject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
 Package rerunfilecheck Info: File `finalproject.out' has not changed.
-(rerunfilecheck)             Checksum: BCB244D6F716A14E0030DAB4E932CB99;411.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+(rerunfilecheck)             Checksum: 1BF4D0AF8DDA37DD5DE5365CF19D96CB;660.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 225.
  ) 
 Here is how much of TeX's memory you used:
- 10157 strings out of 493029
- 150353 string characters out of 6136233
- 346783 words of memory out of 5000000
- 13573 multiletter control sequences out of 15000+600000
- 13127 words of font info for 34 fonts, out of 8000000 for 9000
+ 10203 strings out of 493029
+ 151043 string characters out of 6136233
+ 347940 words of memory out of 5000000
+ 13605 multiletter control sequences out of 15000+600000
+ 14692 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,38p,437b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
-fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfti1000.pfb>
-Output written on finalproject.pdf (3 pages, 108000 bytes).
+ 36i,7n,39p,777b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx17
+28.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfti1000.pfb>
+Output written on finalproject.pdf (5 pages, 184117 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
