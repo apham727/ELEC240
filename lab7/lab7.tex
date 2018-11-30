@@ -209,34 +209,104 @@ The circuit that implements this truth table's equation is depicted below in Fig
 
 \section{Results and Discussion}
 
-Your text here
+\subsection{Part A: Understanding the components}
+
+Before understanding an adder, it is important to learn what the components are and what they do. The list of components used in the circuit are mentioned in the materials, with the relevant logic materials being the LED, Quad DIP switch and XOR and NAND gate. The LED is useful as a display, as having two LED's effectively displays all possible two bit combinations from 00 to 11 in binary or 0 to 3 in decimal. The Quad DIP switch is used to convey which bits will be added, up to a maximum of three. The XOR and NAND gates perform their desired intended logical function on the two input bits, and will be implemented as parts of the adder.
+
+\subsection{Part B: The Full-Adder Circuit}
+
+This section was pretty straight forward, but was an attempt to understand how to implement a full adder in  terms of the circuit components. The truth table for the full-adder can be seen in Figure \ref{sum}. However, this table does not take into account the current physical limitations, of only having NAND and XOR gates. This can be seen in Figure \ref{mod} which has taken into account DeMorgan's law and thus only uses NAND and XOR gates. 
+
+\subsection{Part C: Constructing the Full-Adder}
+
+As the name implies, this section is devoted to using by creating the Full-Adder circuit physically. The steps taken toward creating the logical circuit can be seen in Figure \ref{fig:circuit}. The only steps needed after creating this are attaching the x,y and z bits as well as displaying the carry and sum bit outputs. The inputs are created by attaching 3 of the 4 switches on the quad DIP to power and ground, with each of the switches acting as a different input bit. For the output bits, connecting an led resistor combination through each of the outputs will create a 1 or a 0 bit. The output for each of the bits can be seen below.
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.07]{images/000led.jpg}
+		\caption{000 Input with 00 Output}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.07]{images/001led.jpg}
+		\caption{001 Input with 01 Output}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.07]{images/010led.jpg}
+		\caption{010 Input with 01 Output}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.07]{images/100led.jpg}
+		\caption{100 Input with 01 Output}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.07]{images/011led.jpg}
+		\caption{011Input with 10 Output}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.07]{images/110led.jpg}
+		\caption{110 Input with 10 Output}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.07]{images/101led.jpg}
+		\caption{101 Input with 10 Output}
+	\end{figure}
+\end{centering}
+
+\begin{centering}
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=0.07]{images/111led.jpg}
+		\caption{111 Input with 11 Output}
+	\end{figure}
+\end{centering}
 
 \medskip
 
-\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
 
 \section{References}
-
-Your text here
+https://www.ece.rice.edu/~dpr2/elec240/lab7/experiment\_7-1/
 
 \medskip
 
-\textit{Note (To be deleted): List any datasheets, websites, lab procedure, etc. used during the lab.}
+
 
 \section{Conclusion}
 
-Your text here
+In part A, we learned the various circuit elements and truth tables needed to create a full adder. By adding various truth tables in series, a three bit adder can be created with a carry and sum term. In part B, we combined the truth tables into two that had the desired carry and sum terms. However, this was not done in terms of NAND and XOR, so using DeMorgan's law, these tables were modified to work with only NAND and XOR components. In Part C, we physically created the circuit, and the successful outputs were shown in the Results and Discussion section. Using the given components, the logic checked out, and the full-adder was successful.	
 
 \medskip
 
-\textit{Note (To be deleted): While the ``Results and Discussion'' section focused on the test results individually, the ``Conclusion'' discusses the results in the context of the entire experiment. Usually, the objectives given in the ``Introduction'' are reviewed to determine whether the experiment succeeded. If the objectives were not met, you should analyze why the results were not as predicted.}
 
 \section{Errors}
 
-Your text here
+Since this was a relatively straightforward lab with boolean outputs that returned what was planned, so no errors were experienced. However, if the outputs do not come out as planned possible errors can be attributed to poor wire management or human error.
 
 \medskip
 
-\textit{Note (To be deleted): Briefly list sources of error and discuss how to eliminate or deal with them}
 
 \end{document}

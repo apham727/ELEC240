@@ -78,19 +78,37 @@ Your text here
 
 \subsection{Pre-Lab Calculations and Schematics}
 
-Your text here
+
 
 \medskip
 
 \textit{Note (To be deleted): Include the homework pre-calculations and schematics that serve as the initial setup for the test. Briefly explain the importance of each item you include. You may want to number your equations/figures so you can refer to them in later sections. Including photos of handwritten work is okay.}
-
+===
 \section{Results and Discussion}
 
-Your text here
+\subsection{Construct subsystems}
+
+\subsubsection{Analog Signal Generation}
+
+This section uses the circuit constructed in previous labs, consult Figure \ref{fig:asg}. In short, this op amp circuit connects to the different 
+
+\subsubsection{Analog Speaker Driver}
+
+As the name implies, this Op-Amp circuit connects the speaker to a $V_{in}$. In this case, the input voltage is an analog sound that will be sent over the radio. 
+
+\subsubsection{Building Labview VIs}
+
+Two Labview VIs were built, the transmitter and the receiver. The transmitter function is created with the output $x(t)  = A (1 + m(t)) sin(2 \pi f_c t)$ where the message signal is input from the breadboard through the DAQ cable and the transmitted signal is output from the DAQ back to the breadboard, and to the RF module, to be transmitted. 
+
+The reciever is created to take in the previous modulated signal and then further modulate it by $sin(2 \pi f_c t)$ and then lowpass filter this signal at the bandwidth of speech in order to remove the higher frequency modulations that result. 
+
+\subsubsection{Characterizing modules with Bode Plots}
+
+\subsection{Self Test}
+	
+
 
 \medskip
-
-\textit{Note (To be deleted): The heart of your report is the presentation of your results and a discussion of those results. In your discussion, you should not only analyze your results, but also discuss the implications of those results.}
 
 \section{References}
 
