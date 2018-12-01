@@ -1,0 +1,23 @@
+% receiver
+freq = [ 150 125 100 75 25 10 1 175 200 250 300 400 500 ];
+rms = [8.42 7.83 6.64 5 1.9 .740 .076  8.32 7.87 4.43 1.07 .125 .03];
+max_val = max(rms);
+db_rms = 10 * log10(rms/max_val);
+
+scatter(freq,db_rms);
+title('Reciever Bode Plot')
+xlabel('Frequency (kHz)');
+ylabel('RMS Voltage (V)');
+
+
+% transmitter
+freq = [182 164 144 114 100 50 10 5 200 250 500 350 450];
+rms = [4.28 5.65 3.36 1.07 .68 .136 .0065 .0034 2.97 1.74 .025 .116 .026];
+max_val = max(rms);
+db_rms = 10 * log10(rms/max_val);
+
+figure()
+scatter(freq,db_rms);
+title('Transmitter Bode Plot')
+xlabel('Frequency (kHz)');
+ylabel('RMS Voltage (V)');
